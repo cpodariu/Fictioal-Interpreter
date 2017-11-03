@@ -3,21 +3,21 @@ package Model;
 import Utils.MyIDictionary;
 
 public class ConstExp extends Exp{
-    int number;
+    int value;
 
     public String toString()
     {
-        return Integer.toString(number);
+        return Integer.toString(value);
     }
 
     public int eval(MyIDictionary<String, Integer> dict)
     {
-        return number;
+        return value;
     }
 
     public ConstExp(int value)
     {
-        number = value;
+        this.value = value;
     }
 
 
