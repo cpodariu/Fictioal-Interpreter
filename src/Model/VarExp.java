@@ -1,5 +1,6 @@
 package Model;
 
+import Exceptions.ExpressionException;
 import Utils.MyIDictionary;
 
 public class VarExp extends Exp{
@@ -16,8 +17,11 @@ public class VarExp extends Exp{
         return label;
     }
 
-    public int eval(MyIDictionary<String, Integer> dict)
+    public int eval(MyIDictionary<String, Integer> dict) throws  ExpressionException
     {
+        if (!dict.containsKey(label))
+            throw new ExpressionException("Label " + label + " not in symbol table")
+                    ;
         return dict.get(label);
     }
 }
