@@ -1,5 +1,6 @@
 package Model;
 
+import Exceptions.ExpressionException;
 import Utils.MyIList;
 
 public class PrintStmt implements IStmt{
@@ -11,7 +12,7 @@ public class PrintStmt implements IStmt{
         this.exp = exp;
     }
 
-    public PrgState execute(PrgState state)
+    public PrgState execute(PrgState state) throws ExpressionException
     {
         MyIList<String> out = state.getOut();
 

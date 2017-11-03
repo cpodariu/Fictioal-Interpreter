@@ -1,5 +1,6 @@
 package Model;
 
+import Exceptions.ExpressionException;
 import Utils.MyIDictionary;
 
 public class AssignStmt implements IStmt{
@@ -11,7 +12,7 @@ public class AssignStmt implements IStmt{
         return label + " = " + value.toString();
     }
 
-    public PrgState execute(PrgState state)
+    public PrgState execute(PrgState state) throws ExpressionException
     {
         MyIDictionary<String, Integer> symTable = state.getSymTable();
 

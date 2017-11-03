@@ -1,4 +1,7 @@
 package Model;
+
+import Exceptions.ExpressionException;
+
 public class IfStmt implements IStmt{
 
     Exp ex;
@@ -17,7 +20,7 @@ public class IfStmt implements IStmt{
         return "(If " + ex.toString() + " then " + ifS.toString() + " else " + elseS.toString()+ ")";
     }
 
-    public PrgState execute(PrgState state)
+    public PrgState execute(PrgState state) throws ExpressionException
     {
         int result = ex.eval(state.getSymTable());
 

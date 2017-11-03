@@ -1,5 +1,6 @@
 package Model;
 
+import Exceptions.ExpressionException;
 import Utils.MyIDictionary;
 
 public class ArithExp extends Exp {
@@ -25,7 +26,7 @@ public class ArithExp extends Exp {
         return left.toString() + " " + sign + " " + right.toString();
     }
 
-    public int eval(MyIDictionary<String, Integer> dict)
+    public int eval(MyIDictionary<String, Integer> dict) throws ExpressionException
     {
         int left;
         int right;
@@ -46,6 +47,8 @@ public class ArithExp extends Exp {
                 result = left * right;
                 break;
             case '/':
+                if (right == 0)
+                    throw new ExpressionException("Division by zero");
                 result = left / right;
                 break;
         }
