@@ -34,10 +34,11 @@ public class Controller {
 
     public void allSteps() throws ExpressionException
     {
-        PrgState state = repository.getState();;
+        PrgState state = repository.getState();
         do
         {
             oneStep();
+            repository.logPrgStateExec();
         }while(!state.getStack().isEmpty());
     }
 
