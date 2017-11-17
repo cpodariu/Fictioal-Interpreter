@@ -43,9 +43,10 @@ public class PrgState {
 
     public String toString()
     {
-        String res = "Exe Stack:\n" + exeStack.toString() +
+        String res = "\nExe Stack:\n" + exeStack.toString() +
                 "\nSym Table:\n" + symTable.toString() +
-                "\nOut:\n" + out.toString() + "\n";
+                "\nOut:\n" + out.toString() +
+                "\nFiles:\n" + fileTable.toString() + "\n";
         return res;
     }
 	

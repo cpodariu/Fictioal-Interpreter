@@ -14,7 +14,7 @@ import java.util.Scanner;
 public class Interpreter {
 	public static void main(String[] args) {
 		MyFileReader.currentId  = 0;
-		String log = "/home/cpodariu/Desktop/log.txt";
+		String log = "log.txt";
 //		System.out.print("Log file name: \n");
 //		Scanner s = new Scanner(System.in);
 //		log = s.nextLine();
@@ -50,6 +50,9 @@ public class Interpreter {
 		Repository r4 = new Repository(st4, log);
 		Controller c4 = new Controller(r4);
 		c4.getState().getStack().push(new CloseRFileStmt(new VarExp("var_f")));
+		c4.getState().getStack().push(new IfStmt(new VarExp("var_c"),
+										new CompStmt(new ReadFileStmt(new VarExp("var_f"), "var_c"), new PrintStmt(new VarExp("var_c"))),
+										new PrintStmt(new ConstExp(0))));
 		c4.getState().getStack().push(new CompStmt(new ReadFileStmt(new VarExp("var_f"), "var_c"), new PrintStmt(new VarExp("var_c"))));
 		c4.getState().getStack().push(new OpenRFileStmt("var_f", "in.txt"));
 		

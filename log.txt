@@ -1,0 +1,333 @@
+Exe Stack:
+[( Read(var_f, var_c); Print(var_c) ), (If var_c then ( Read(var_f, var_c); Print(var_c) ) else Print(0)), Close(var_f) ]
+Sym Table:
+{var_f=0}
+Out:
+[]
+Exe Stack:
+[Read(var_f, var_c), Print(var_c), (If var_c then ( Read(var_f, var_c); Print(var_c) ) else Print(0)), Close(var_f) ]
+Sym Table:
+{var_f=0}
+Out:
+[]
+Exe Stack:
+[Print(var_c), (If var_c then ( Read(var_f, var_c); Print(var_c) ) else Print(0)), Close(var_f) ]
+Sym Table:
+{var_f=0, var_c=5}
+Out:
+[]
+Exe Stack:
+[(If var_c then ( Read(var_f, var_c); Print(var_c) ) else Print(0)), Close(var_f) ]
+Sym Table:
+{var_f=0, var_c=5}
+Out:
+[5]
+Exe Stack:
+[( Read(var_f, var_c); Print(var_c) ), Close(var_f) ]
+Sym Table:
+{var_f=0, var_c=5}
+Out:
+[5]
+Exe Stack:
+[Read(var_f, var_c), Print(var_c), Close(var_f) ]
+Sym Table:
+{var_f=0, var_c=5}
+Out:
+[5]
+Exe Stack:
+[Print(var_c), Close(var_f) ]
+Sym Table:
+{var_f=0, var_c=4}
+Out:
+[5]
+Exe Stack:
+[Close(var_f) ]
+Sym Table:
+{var_f=0, var_c=4}
+Out:
+[5, 4]
+Exe Stack:
+[]
+Sym Table:
+{var_c=4}
+Out:
+[5, 4]
+Exe Stack:
+[( Read(var_f, var_c); Print(var_c) ), (If var_c then ( Read(var_f, var_c); Print(var_c) ) else Print(0)), Close(var_f) ]
+Sym Table:
+{var_f=0}
+Out:
+[]
+Exe Stack:
+[Read(var_f, var_c), Print(var_c), (If var_c then ( Read(var_f, var_c); Print(var_c) ) else Print(0)), Close(var_f) ]
+Sym Table:
+{var_f=0}
+Out:
+[]
+Exe Stack:
+[Print(var_c), (If var_c then ( Read(var_f, var_c); Print(var_c) ) else Print(0)), Close(var_f) ]
+Sym Table:
+{var_f=0, var_c=5}
+Out:
+[]
+Exe Stack:
+[(If var_c then ( Read(var_f, var_c); Print(var_c) ) else Print(0)), Close(var_f) ]
+Sym Table:
+{var_f=0, var_c=5}
+Out:
+[5]
+Exe Stack:
+[( Read(var_f, var_c); Print(var_c) ), Close(var_f) ]
+Sym Table:
+{var_f=0, var_c=5}
+Out:
+[5]
+Exe Stack:
+[Read(var_f, var_c), Print(var_c), Close(var_f) ]
+Sym Table:
+{var_f=0, var_c=5}
+Out:
+[5]
+Exe Stack:
+[Print(var_c), Close(var_f) ]
+Sym Table:
+{var_f=0, var_c=4}
+Out:
+[5]
+Exe Stack:
+[Close(var_f) ]
+Sym Table:
+{var_f=0, var_c=4}
+Out:
+[5, 4]
+Exe Stack:
+[]
+Sym Table:
+{var_c=4}
+Out:
+[5, 4]
+Exe Stack:
+[( Read(var_f, var_c); Print(var_c) ), (If var_c then ( Read(var_f, var_c); Print(var_c) ) else Print(0)), Close(var_f) ]
+Sym Table:
+{var_f=0}
+Out:
+[]
+Files:
+{0=in.txt}
+Exe Stack:
+[Read(var_f, var_c), Print(var_c), (If var_c then ( Read(var_f, var_c); Print(var_c) ) else Print(0)), Close(var_f) ]
+Sym Table:
+{var_f=0}
+Out:
+[]
+Files:
+{0=in.txt}
+Exe Stack:
+[Print(var_c), (If var_c then ( Read(var_f, var_c); Print(var_c) ) else Print(0)), Close(var_f) ]
+Sym Table:
+{var_f=0, var_c=5}
+Out:
+[]
+Files:
+{0=in.txt}
+Exe Stack:
+[(If var_c then ( Read(var_f, var_c); Print(var_c) ) else Print(0)), Close(var_f) ]
+Sym Table:
+{var_f=0, var_c=5}
+Out:
+[5]
+Files:
+{0=in.txt}
+Exe Stack:
+[( Read(var_f, var_c); Print(var_c) ), Close(var_f) ]
+Sym Table:
+{var_f=0, var_c=5}
+Out:
+[5]
+Files:
+{0=in.txt}
+Exe Stack:
+[Read(var_f, var_c), Print(var_c), Close(var_f) ]
+Sym Table:
+{var_f=0, var_c=5}
+Out:
+[5]
+Files:
+{0=in.txt}
+Exe Stack:
+[Print(var_c), Close(var_f) ]
+Sym Table:
+{var_f=0, var_c=4}
+Out:
+[5]
+Files:
+{0=in.txt}
+Exe Stack:
+[Close(var_f) ]
+Sym Table:
+{var_f=0, var_c=4}
+Out:
+[5, 4]
+Files:
+{0=in.txt}
+Exe Stack:
+[]
+Sym Table:
+{var_c=4}
+Out:
+[5, 4]
+Files:
+{}
+Exe Stack:
+[( Read(var_f, var_c); Print(var_c) ), (If var_c then ( Read(var_f, var_c); Print(var_c) ) else Print(0)), Close(var_f) ]
+Sym Table:
+{var_f=0}
+Out:
+[]
+Files:
+{0=in.txt}
+Exe Stack:
+[Read(var_f, var_c), Print(var_c), (If var_c then ( Read(var_f, var_c); Print(var_c) ) else Print(0)), Close(var_f) ]
+Sym Table:
+{var_f=0}
+Out:
+[]
+Files:
+{0=in.txt}
+Exe Stack:
+[Print(var_c), (If var_c then ( Read(var_f, var_c); Print(var_c) ) else Print(0)), Close(var_f) ]
+Sym Table:
+{var_f=0, var_c=5}
+Out:
+[]
+Files:
+{0=in.txt}
+Exe Stack:
+[(If var_c then ( Read(var_f, var_c); Print(var_c) ) else Print(0)), Close(var_f) ]
+Sym Table:
+{var_f=0, var_c=5}
+Out:
+[5]
+Files:
+{0=in.txt}
+Exe Stack:
+[( Read(var_f, var_c); Print(var_c) ), Close(var_f) ]
+Sym Table:
+{var_f=0, var_c=5}
+Out:
+[5]
+Files:
+{0=in.txt}
+Exe Stack:
+[Read(var_f, var_c), Print(var_c), Close(var_f) ]
+Sym Table:
+{var_f=0, var_c=5}
+Out:
+[5]
+Files:
+{0=in.txt}
+Exe Stack:
+[Print(var_c), Close(var_f) ]
+Sym Table:
+{var_f=0, var_c=4}
+Out:
+[5]
+Files:
+{0=in.txt}
+Exe Stack:
+[Close(var_f) ]
+Sym Table:
+{var_f=0, var_c=4}
+Out:
+[5, 4]
+Files:
+{0=in.txt}
+Exe Stack:
+[]
+Sym Table:
+{var_c=4}
+Out:
+[5, 4]
+Files:
+{}
+
+Exe Stack:
+[( Read(var_f, var_c); Print(var_c) ), (If var_c then ( Read(var_f, var_c); Print(var_c) ) else Print(0)), Close(var_f) ]
+Sym Table:
+{var_f=0}
+Out:
+[]
+Files:
+{0=in.txt}
+
+Exe Stack:
+[Read(var_f, var_c), Print(var_c), (If var_c then ( Read(var_f, var_c); Print(var_c) ) else Print(0)), Close(var_f) ]
+Sym Table:
+{var_f=0}
+Out:
+[]
+Files:
+{0=in.txt}
+
+Exe Stack:
+[Print(var_c), (If var_c then ( Read(var_f, var_c); Print(var_c) ) else Print(0)), Close(var_f) ]
+Sym Table:
+{var_f=0, var_c=5}
+Out:
+[]
+Files:
+{0=in.txt}
+
+Exe Stack:
+[(If var_c then ( Read(var_f, var_c); Print(var_c) ) else Print(0)), Close(var_f) ]
+Sym Table:
+{var_f=0, var_c=5}
+Out:
+[5]
+Files:
+{0=in.txt}
+
+Exe Stack:
+[( Read(var_f, var_c); Print(var_c) ), Close(var_f) ]
+Sym Table:
+{var_f=0, var_c=5}
+Out:
+[5]
+Files:
+{0=in.txt}
+
+Exe Stack:
+[Read(var_f, var_c), Print(var_c), Close(var_f) ]
+Sym Table:
+{var_f=0, var_c=5}
+Out:
+[5]
+Files:
+{0=in.txt}
+
+Exe Stack:
+[Print(var_c), Close(var_f) ]
+Sym Table:
+{var_f=0, var_c=4}
+Out:
+[5]
+Files:
+{0=in.txt}
+
+Exe Stack:
+[Close(var_f) ]
+Sym Table:
+{var_f=0, var_c=4}
+Out:
+[5, 4]
+Files:
+{0=in.txt}
+
+Exe Stack:
+[]
+Sym Table:
+{var_c=4}
+Out:
+[5, 4]
+Files:
+{}

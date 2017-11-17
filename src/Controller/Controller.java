@@ -36,6 +36,7 @@ public class Controller {
 
     public void allSteps() throws ExpressionException, FileException {
         PrgState state = repository.getState();
+        System.out.print(state.toString());
         do
         {
             oneStep();
