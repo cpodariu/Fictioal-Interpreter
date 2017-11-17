@@ -2,6 +2,7 @@ package View;
 
 import Controller.Controller;
 import Exceptions.ExpressionException;
+import Exceptions.FileException;
 import Model.*;
 import Repo.Repository;
 import Utils.MyDictionary;
@@ -18,13 +19,11 @@ public class Console {
 
     private Controller ctrl;
 
-    private void oneStep() throws ExpressionException
-    {
+    private void oneStep() throws ExpressionException, FileException {
         ctrl.oneStep();
     }
 
-    private void allSteps() throws ExpressionException
-    {
+    private void allSteps() throws ExpressionException, FileException {
         ctrl.allSteps();
     }
 
@@ -40,7 +39,8 @@ public class Console {
                 ConstExp(2))),
                 new CompStmt(new IfStmt(new VarExp("a"),new AssignStmt("v",new ConstExp(2)), new
                         AssignStmt("v", new ConstExp(3))), new PrintStmt(new VarExp("v")))));
-
+        
+        
         commands.put(0, "Exit");
         commands.put(1,"One step");
         commands.put(2, "All steps");
@@ -77,7 +77,6 @@ public class Console {
             if (this.programs.containsKey(command))
             {
                 this.ctrl = new Controller();
-                this.ctrl.getState().getStack().push(this.programs.get(command));
                 while (!this.ctrl.getState().getStack().isEmpty())
                 {
                     this.printCommandMenu();
@@ -91,6 +90,11 @@ public class Console {
                             System.out.print(e.toString() + "\n");
                             break;
                         }
+                        catch (FileException e)
+                        {
+                            System.out.print("FileException: " + e.toString() + "\n");
+                            break;
+                        }
                     }
                     else if (command == 2)
                     {
@@ -98,6 +102,11 @@ public class Console {
                         catch (ExpressionException e)
                         {
                             System.out.print(e.toString() + "\n");
+                            break;
+                        }
+                        catch (FileException e)
+                        {
+                            System.out.print("FileException: " + e.toString() + "\n");
                             break;
                         }
                     }

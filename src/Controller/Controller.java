@@ -1,6 +1,7 @@
 package Controller;
 
 import Exceptions.ExpressionException;
+import Exceptions.FileException;
 import Model.IStmt;
 import Model.PrgState;
 import Repo.Repository;
@@ -22,23 +23,22 @@ public class Controller {
         this.repository = repository;
     }
 
-    public void oneStep() throws ExpressionException
-    {
+    public void oneStep() throws ExpressionException, FileException {
         PrgState state = repository.getState();
         IStmt stmt = state.getStack().pop();
 
         stmt.execute(state);
 
+        repository.logPrgStateExec();
+
         System.out.print(state.toString());
     }
 
-    public void allSteps() throws ExpressionException
-    {
+    public void allSteps() throws ExpressionException, FileException {
         PrgState state = repository.getState();
         do
         {
             oneStep();
-            repository.logPrgStateExec();
         }while(!state.getStack().isEmpty());
     }
 

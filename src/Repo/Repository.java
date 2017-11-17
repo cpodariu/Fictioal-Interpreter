@@ -13,13 +13,29 @@ import java.io.PrintWriter;
 
 public class Repository implements RepositoryInterface {
 	PrgState state;
+	String logFilePath;
+	PrintWriter logFileWriter;
 	
 	public Repository(PrgState st) {
-		state = st;
+		this(st, "/home/cpodariu/Desktop/Fictioal-Interpreter/LogFiles/test.txt");
+		
 	}
 	
 	public Repository() {
-		this.state = new PrgState(new MyStack<IStmt>(), new MyDictionary<String, Integer>(), new MyList<String>());
+		this(new PrgState(new MyStack<IStmt>(), new MyDictionary<String, Integer>(), new MyList<String>()), "/home/cpodariu/Desktop/Fictioal-Interpreter/LogFiles/test.txt");
+	}
+
+	public Repository(PrgState state, String logFilePath)
+	{
+		this.state = state;
+		this.logFilePath = logFilePath;
+		try{
+			this.logFileWriter = new PrintWriter(new BufferedWriter(new FileWriter(this.logFilePath, true)));
+		}
+		catch(IOException e)
+		{
+			System.out.print(e.getMessage());
+		}
 	}
 	
 	public PrgState getState() {
@@ -28,13 +44,7 @@ public class Repository implements RepositoryInterface {
 	
 	@Override
 	public void logPrgStateExec() {
-		String logFilePath = "/home/cpodariu/Desktop/MAP/Fictioal-Interpreter/LogFiles/test.txt";
-		try {
-			PrintWriter logFile = new PrintWriter(new BufferedWriter(new FileWriter(logFilePath, true)));
-			logFile.append(state.toString());
-			logFile.close();
-		} catch (IOException e) {
-			e.printStackTrace();
-		}
+		logFileWriter.write(state.toString());
+		logFileWriter.flush();
 	}
 }
