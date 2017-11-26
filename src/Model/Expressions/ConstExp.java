@@ -1,6 +1,6 @@
-package Model;
+package Model.Expressions;
 
-import Utils.MyIDictionary;
+import Utils.Interfaces.MyIDictionary;
 
 public class ConstExp extends Exp{
     int value;

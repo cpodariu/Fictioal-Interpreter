@@ -1,8 +1,9 @@
-package Model;
+package Model.Statements;
 
-import Utils.MyIStack;
+import Model.PrgState;
+import Utils.Interfaces.MyIStack;
 
-public class CompStmt implements IStmt{
+public class CompStmt implements IStmt {
     IStmt first;
     IStmt second;
 

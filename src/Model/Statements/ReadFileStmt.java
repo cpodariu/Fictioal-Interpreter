@@ -1,9 +1,11 @@
-package Model;
+package Model.Statements;
 
 import Exceptions.ExpressionException;
+import Model.Expressions.Exp;
+import Model.PrgState;
 import Utils.MyFileReader;
 
-public class ReadFileStmt implements IStmt{
+public class ReadFileStmt implements IStmt {
 	Exp var_id;
 	String label;
 	

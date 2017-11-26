@@ -3,15 +3,13 @@ package View;
 import Controller.Controller;
 import Exceptions.ExpressionException;
 import Exceptions.FileException;
-import Model.*;
-import Repo.Repository;
-import Utils.MyDictionary;
-import Utils.MyList;
-import Utils.MyStack;
+import Model.Expressions.ArithExp;
+import Model.Expressions.ConstExp;
+import Model.Expressions.VarExp;
+import Model.Statements.*;
+import Utils.PrimitiveADT.MyDictionary;
 
-import javax.naming.ldap.Control;
 import java.util.Scanner;
-import java.util.concurrent.Callable;
 
 public class Console {
     private MyDictionary<Integer, IStmt> programs = new MyDictionary<Integer, IStmt>();

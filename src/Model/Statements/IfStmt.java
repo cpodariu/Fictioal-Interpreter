@@ -1,8 +1,10 @@
-package Model;
+package Model.Statements;
 
 import Exceptions.ExpressionException;
+import Model.Expressions.Exp;
+import Model.PrgState;
 
-public class IfStmt implements IStmt{
+public class IfStmt implements IStmt {
 
     Exp condition;
     IStmt thenS;

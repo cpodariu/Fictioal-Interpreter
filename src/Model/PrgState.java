@@ -1,9 +1,10 @@
 package Model;
 
+import Model.Statements.IStmt;
 import Utils.MyFileReader;
-import Utils.MyIDictionary;
-import Utils.MyIList;
-import Utils.MyIStack;
+import Utils.Interfaces.MyIDictionary;
+import Utils.Interfaces.MyIList;
+import Utils.Interfaces.MyIStack;
 
 public class PrgState {
     MyIStack<IStmt> exeStack;

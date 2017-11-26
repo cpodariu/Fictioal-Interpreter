@@ -1,4 +1,6 @@
-package Utils;
+package Utils.PrimitiveADT;
+
+import Utils.Interfaces.MyIStack;
 
 import java.util.ArrayList;
 import java.util.Collections;

@@ -1,4 +1,4 @@
-package Utils;
+package Utils.Interfaces;
 
 public interface MyIStack<T> {
     public T push(T elem);

@@ -1,10 +1,10 @@
 package Repo;
 
-import Model.IStmt;
+import Model.Statements.IStmt;
 import Model.PrgState;
-import Utils.MyDictionary;
-import Utils.MyList;
-import Utils.MyStack;
+import Utils.PrimitiveADT.MyDictionary;
+import Utils.PrimitiveADT.MyList;
+import Utils.PrimitiveADT.MyStack;
 
 import java.io.BufferedWriter;
 import java.io.FileWriter;

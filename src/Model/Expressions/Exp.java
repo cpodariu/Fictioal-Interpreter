@@ -1,7 +1,7 @@
-package Model;
+package Model.Expressions;
 
 import Exceptions.ExpressionException;
-import Utils.MyIDictionary;
+import Utils.Interfaces.MyIDictionary;
 
 public abstract class Exp {
     public abstract String toString();

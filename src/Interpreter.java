@@ -1,15 +1,17 @@
 import Controller.Controller;
 import Model.*;
+import Model.Expressions.ArithExp;
+import Model.Expressions.ConstExp;
+import Model.Expressions.VarExp;
+import Model.Statements.*;
 import Repo.Repository;
-import Utils.MyDictionary;
+import Utils.PrimitiveADT.MyDictionary;
 import Utils.MyFileReader;
-import Utils.MyList;
-import Utils.MyStack;
+import Utils.PrimitiveADT.MyList;
+import Utils.PrimitiveADT.MyStack;
 import View.ExitCommand;
 import View.RunExampleCommand;
 import View.TextMenu;
-
-import java.util.Scanner;
 
 public class Interpreter {
 	public static void main(String[] args) {

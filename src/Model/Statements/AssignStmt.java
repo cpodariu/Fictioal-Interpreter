@@ -1,9 +1,11 @@
-package Model;
+package Model.Statements;
 
 import Exceptions.ExpressionException;
-import Utils.MyIDictionary;
+import Model.Expressions.Exp;
+import Model.PrgState;
+import Utils.Interfaces.MyIDictionary;
 
-public class AssignStmt implements IStmt{
+public class AssignStmt implements IStmt {
     String label;
     Exp value;
 

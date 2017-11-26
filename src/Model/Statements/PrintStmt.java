@@ -1,9 +1,11 @@
-package Model;
+package Model.Statements;
 
 import Exceptions.ExpressionException;
-import Utils.MyIList;
+import Model.Expressions.Exp;
+import Model.PrgState;
+import Utils.Interfaces.MyIList;
 
-public class PrintStmt implements IStmt{
+public class PrintStmt implements IStmt {
     
     Exp exp;
     

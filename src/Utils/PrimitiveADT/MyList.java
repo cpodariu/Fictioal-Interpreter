@@ -1,6 +1,6 @@
-package Utils;
+package Utils.PrimitiveADT;
 
-import Utils.MyIList;
+import Utils.Interfaces.MyIList;
 
 import java.util.ArrayList;
 

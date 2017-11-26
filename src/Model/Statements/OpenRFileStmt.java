@@ -1,14 +1,16 @@
-package Model;
+package Model.Statements;
 
 import Exceptions.FileException;
+import Model.PrgState;
+import Model.Statements.IStmt;
 import Utils.MyFileReader;
-import Utils.MyIDictionary;
+import Utils.Interfaces.MyIDictionary;
 
 import java.io.BufferedReader;
 import java.io.FileReader;
 import java.io.IOException;
 
-public class OpenRFileStmt implements IStmt{
+public class OpenRFileStmt implements IStmt {
 	String variableId;
 	String fileName;
 	

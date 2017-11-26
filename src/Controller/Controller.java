@@ -2,12 +2,9 @@ package Controller;
 
 import Exceptions.ExpressionException;
 import Exceptions.FileException;
-import Model.IStmt;
+import Model.Statements.IStmt;
 import Model.PrgState;
 import Repo.Repository;
-import Utils.MyDictionary;
-import Utils.MyList;
-import Utils.MyStack;
 
 public class Controller {
 

@@ -1,7 +1,8 @@
-package Model;
+package Model.Statements;
 
 import Exceptions.ExpressionException;
 import Exceptions.FileException;
+import Model.PrgState;
 
 public interface IStmt {
     String toString();

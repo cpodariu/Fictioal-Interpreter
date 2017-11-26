@@ -1,4 +1,4 @@
-package Utils;
+package Utils.Interfaces;
 
 public interface MyIList<T> {
     boolean add(T elem);

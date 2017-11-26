@@ -1,8 +1,7 @@
 package View;
 
-import Utils.MyDictionary;
+import Utils.PrimitiveADT.MyDictionary;
 
-import java.util.HashMap;
 import java.util.Scanner;
 
 public class TextMenu {

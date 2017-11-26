@@ -1,10 +1,12 @@
-package Model;
+package Model.Statements;
 
 import Exceptions.ExpressionException;
+import Model.Expressions.Exp;
+import Model.PrgState;
 import Utils.MyFileReader;
-import Utils.MyIDictionary;
+import Utils.Interfaces.MyIDictionary;
 
-public class CloseRFileStmt implements IStmt{
+public class CloseRFileStmt implements IStmt {
 	Exp varId;
 	
 	public CloseRFileStmt(Exp varId)
