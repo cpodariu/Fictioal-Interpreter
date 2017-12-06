@@ -412,3 +412,157 @@ Out:
 [5, 4]
 Files:
 {}
+
+Exe Stack:
+[new(v, 20), new(a, 22), Print(v)]
+Sym Table:
+{v=20}
+Out:
+[]
+Files:
+{}
+Heap:
+{}
+
+Exe Stack:
+[new(a, 22), Print(v)]
+Sym Table:
+{v=0}
+Out:
+[]
+Files:
+{}
+Heap:
+{0=20}
+
+Exe Stack:
+[Print(v)]
+Sym Table:
+{a=1, v=0}
+Out:
+[]
+Files:
+{}
+Heap:
+{0=20, 1=22}
+
+Exe Stack:
+[]
+Sym Table:
+{a=1, v=0}
+Out:
+[0]
+Files:
+{}
+Heap:
+{0=20, 1=22}
+
+Exe Stack:
+[new(v, 20), new(a, 22), Print(100 + v), Print(100 + a)]
+Sym Table:
+{v=10}
+Out:
+[]
+Files:
+{}
+Heap:
+{}
+
+Exe Stack:
+[new(a, 22), Print(100 + v), Print(100 + a)]
+Sym Table:
+{v=0}
+Out:
+[]
+Files:
+{}
+Heap:
+{0=20}
+
+Exe Stack:
+[Print(100 + v), Print(100 + a)]
+Sym Table:
+{a=1, v=0}
+Out:
+[]
+Files:
+{}
+Heap:
+{0=20, 1=22}
+
+Exe Stack:
+[Print(100 + a)]
+Sym Table:
+{a=1, v=0}
+Out:
+[100]
+Files:
+{}
+Heap:
+{0=20, 1=22}
+
+Exe Stack:
+[]
+Sym Table:
+{a=1, v=0}
+Out:
+[100, 101]
+Files:
+{}
+Heap:
+{0=20, 1=22}
+
+Exe Stack:
+[new(v, 20), new(a, 22), Print(100 + read(v)), Print(100 + read(a))]
+Sym Table:
+{v=10}
+Out:
+[]
+Files:
+{}
+Heap:
+{}
+
+Exe Stack:
+[new(a, 22), Print(100 + read(v)), Print(100 + read(a))]
+Sym Table:
+{v=0}
+Out:
+[]
+Files:
+{}
+Heap:
+{0=20}
+
+Exe Stack:
+[Print(100 + read(v)), Print(100 + read(a))]
+Sym Table:
+{a=1, v=0}
+Out:
+[]
+Files:
+{}
+Heap:
+{0=20, 1=22}
+
+Exe Stack:
+[Print(100 + read(a))]
+Sym Table:
+{a=1, v=0}
+Out:
+[120]
+Files:
+{}
+Heap:
+{0=20, 1=22}
+
+Exe Stack:
+[]
+Sym Table:
+{a=1, v=0}
+Out:
+[120, 122]
+Files:
+{}
+Heap:
+{0=20, 1=22}

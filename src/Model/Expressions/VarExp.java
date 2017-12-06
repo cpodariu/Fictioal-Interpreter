@@ -2,6 +2,7 @@ package Model.Expressions;
 
 import Exceptions.ExpressionException;
 import Utils.Interfaces.MyIDictionary;
+import Utils.Interfaces.MyIHeap;
 
 public class VarExp extends Exp{
 
@@ -17,11 +18,10 @@ public class VarExp extends Exp{
         return label;
     }
 
-    public int eval(MyIDictionary<String, Integer> dict) throws  ExpressionException
+    public int eval(MyIDictionary<String, Integer> symTable, MyIHeap heap) throws  ExpressionException
     {
-        if (!dict.containsKey(label))
-            throw new ExpressionException("Label " + label + " not in symbol table")
-                    ;
-        return dict.get(label);
+        if (!symTable.containsKey(label))
+            throw new ExpressionException("Label " + label + " not in symbol table");
+        return symTable.get(label);
     }
 }

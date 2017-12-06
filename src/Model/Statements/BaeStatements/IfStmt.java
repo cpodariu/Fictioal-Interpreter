@@ -1,4 +1,4 @@
-package Model.Statements;
+package Model.Statements.BaeStatements;
 
 import Exceptions.ExpressionException;
 import Model.Expressions.Exp;
@@ -24,7 +24,7 @@ public class IfStmt implements IStmt {
 
     public PrgState execute(PrgState state) throws ExpressionException
     {
-        int result = condition.eval(state.getSymTable());
+        int result = condition.eval(state.getSymTable(), state.getHeap());
 
         if(result != 0)
             state.getStack().push(thenS);

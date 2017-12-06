@@ -1,10 +1,17 @@
 package Utils.Interfaces;
 
-import Utils.Interfaces.MyIDictionary;
+import Exceptions.ExpressionException;
 
-public interface MyIHeap<V> {
-    public Long allocNew(V value);
-    public void freeMemory(Long address);
-    public void collectGarbage(MyIDictionary<String,Integer> symTable);
-    public V dereference(Long address);
+import java.util.Map;
+
+public interface MyIHeap{
+    Integer allocNew(Integer value);
+    void freeMemory(Integer address);
+    void setValue(Integer key, Integer value) throws ExpressionException;
+    void collectGarbage(MyIDictionary<String, Integer> symTable);
+    Integer dereference(Integer address);
+    String toString();
+    Map<Integer,Integer> getContent();
+    void setContent(Map<Integer, Integer> content);
+    boolean containsKey(Object key);
 }

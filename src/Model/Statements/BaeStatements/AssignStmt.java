@@ -1,4 +1,4 @@
-package Model.Statements;
+package Model.Statements.BaeStatements;
 
 import Exceptions.ExpressionException;
 import Model.Expressions.Exp;
@@ -18,7 +18,7 @@ public class AssignStmt implements IStmt {
     {
         MyIDictionary<String, Integer> symTable = state.getSymTable();
 
-        int res = value.eval(symTable);
+        int res = value.eval(symTable, state.getHeap());
         symTable.put(label, res);
 
         return state;

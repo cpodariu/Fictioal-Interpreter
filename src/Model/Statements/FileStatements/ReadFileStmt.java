@@ -1,8 +1,9 @@
-package Model.Statements;
+package Model.Statements.FileStatements;
 
 import Exceptions.ExpressionException;
 import Model.Expressions.Exp;
 import Model.PrgState;
+import Model.Statements.BaeStatements.IStmt;
 import Utils.MyFileReader;
 
 public class ReadFileStmt implements IStmt {
@@ -19,7 +20,7 @@ public class ReadFileStmt implements IStmt {
 	{
 		int result = 0;
 		
-		result = var_id.eval(state.getSymTable());
+		result = var_id.eval(state.getSymTable(), state.getHeap());
 		
 		MyFileReader reader = state.getFileTable().get(result);
 		

@@ -1,71 +1,60 @@
 package Utils;
 
 
+import Exceptions.ExpressionException;
 import Utils.Interfaces.MyIDictionary;
 import Utils.Interfaces.MyIHeap;
+import Utils.PrimitiveADT.MyDictionary;
 
+import java.util.Map;
 import java.util.Set;
 
-public class MyHeap<V> implements MyIHeap<V>,MyIDictionary<Long, V> {
-    private Long currentPos;
-    private MyIDictionary<Long, V> dictionary;
+public class MyHeap extends MyDictionary<Integer, Integer> implements MyIHeap{
 
-    public MyHeap() {
-        this.currentPos = Long.valueOf(1);
+    private Integer nextKey = 0;
+
+    @Override
+    public Integer allocNew(Integer value) {
+        this.put(nextKey, value);
+        nextKey++;
+        return (nextKey - 1);
     }
 
     @Override
-    public V put(Long key, V value) {
-        return dictionary.put(key, value);
+    public void freeMemory(Integer address) {
+        this.remove(address);
     }
 
     @Override
-    public V get(Long key) {
-        return dictionary.get(key);
-    }
-
-    @Override
-    public boolean containsKey(Long key) {
-        return dictionary.containsKey(key);
-    }
-
-    @Override
-    public V remove(Long key) {
-        return dictionary.remove(key);
-    }
-
-    @Override
-    public boolean containsValue(V value) {
-        return dictionary.containsValue(value);
-    }
-
-    @Override
-    public Set<Long> keySet() {
-        return dictionary.keySet();
-    }
-
-    @Override
-    public Long allocNew(V value) {
-        dictionary.put(this.currentPos, value);
-        currentPos++;
-        return currentPos - 1;
-    }
-
-    @Override
-    public void freeMemory(Long address) {
-        dictionary.remove(address);
+    public void setValue(Integer key, Integer value) throws ExpressionException {
+        if(!containsKey(key))
+            throw new ExpressionException("You are trying to access unallocated memory.");
+        put(key, value);
     }
 
     @Override
     public void collectGarbage(MyIDictionary<String, Integer> symTable) {
-        for (Long i:dictionary.keySet())
+        for (Integer key : symTable.values())
         {
-            if (!symTable.containsValue(i))
+            if (this.containsKey(key))
+                freeMemory(key);
         }
     }
 
     @Override
-    public V dereference(Long address) {
-        return dictionary.get(address);
+    public Integer dereference(Integer address) {
+        return this.get(address);
     }
+
+    @Override
+    public Map<Integer, Integer> getContent() {
+        return this;
+    }
+
+    @Override
+    public void setContent(Map<Integer, Integer> content) {
+        this.clear();
+        this.putAll(content);
+    }
+
 }

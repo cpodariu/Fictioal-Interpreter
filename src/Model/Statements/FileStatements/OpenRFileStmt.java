@@ -1,8 +1,8 @@
-package Model.Statements;
+package Model.Statements.FileStatements;
 
 import Exceptions.FileException;
 import Model.PrgState;
-import Model.Statements.IStmt;
+import Model.Statements.BaeStatements.IStmt;
 import Utils.MyFileReader;
 import Utils.Interfaces.MyIDictionary;
 

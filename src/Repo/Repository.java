@@ -1,6 +1,6 @@
 package Repo;
 
-import Model.Statements.IStmt;
+import Model.Statements.BaeStatements.IStmt;
 import Model.PrgState;
 import Utils.PrimitiveADT.MyDictionary;
 import Utils.PrimitiveADT.MyList;
@@ -22,7 +22,7 @@ public class Repository implements RepositoryInterface {
 	}
 	
 	public Repository() {
-		this(new PrgState(new MyStack<IStmt>(), new MyDictionary<String, Integer>(), new MyList<String>()), "/home/cpodariu/Desktop/Fictioal-Interpreter/LogFiles/test.txt");
+		this(new PrgState(), "/home/cpodariu/Desktop/Fictioal-Interpreter/LogFiles/test.txt");
 	}
 
 	public Repository(PrgState state, String logFilePath)

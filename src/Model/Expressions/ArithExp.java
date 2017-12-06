@@ -2,6 +2,7 @@ package Model.Expressions;
 
 import Exceptions.ExpressionException;
 import Utils.Interfaces.MyIDictionary;
+import Utils.Interfaces.MyIHeap;
 
 public class ArithExp extends Exp {
 	Exp right, left;
@@ -23,11 +24,11 @@ public class ArithExp extends Exp {
 		return left.toString() + " " + sign + " " + right.toString();
 	}
 	
-	public int eval(MyIDictionary<String, Integer> dict) throws ExpressionException {
+	public int eval(MyIDictionary<String, Integer> symTable, MyIHeap heap) throws ExpressionException {
 		int left;
 		int right;
-		left = this.left.eval(dict);
-		right = this.right.eval(dict);
+		left = this.left.eval(symTable, heap);
+		right = this.right.eval(symTable, heap);
 		
 		int result = 0;
 		

@@ -1,13 +1,15 @@
 package Utils.Interfaces;
 
+import java.util.Collection;
 import java.util.Set;
 
-public interface MyIDictionary <k,V>{
-    V put(k key, V value);
-    V get(k key);
+public interface MyIDictionary <K,V>{
+    V put(K key, V value);
+    V get(Object key);
     String toString();
-    boolean containsKey(k key);
-    public V remove(k key);
-    boolean containsValue(V value);
-    Set<k> keySet();
+    boolean containsKey(Object key);
+    public V remove(Object key);
+    boolean containsValue(Object value);
+    Set<K> keySet();
+    Collection<V> values();
 }

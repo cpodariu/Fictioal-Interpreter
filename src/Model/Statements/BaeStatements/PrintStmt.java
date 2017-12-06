@@ -1,4 +1,4 @@
-package Model.Statements;
+package Model.Statements.BaeStatements;
 
 import Exceptions.ExpressionException;
 import Model.Expressions.Exp;
@@ -18,7 +18,7 @@ public class PrintStmt implements IStmt {
     {
         MyIList<String> out = state.getOut();
 
-        out.add(Integer.toString(exp.eval(state.getSymTable())));
+        out.add(Integer.toString(exp.eval(state.getSymTable(), state.getHeap())));
         return state;
     }
 
