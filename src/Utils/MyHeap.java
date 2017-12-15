@@ -11,7 +11,7 @@ import java.util.Set;
 
 public class MyHeap extends MyDictionary<Integer, Integer> implements MyIHeap{
 
-    private Integer nextKey = 0;
+    private Integer nextKey = 1;
 
     @Override
     public Integer allocNew(Integer value) {

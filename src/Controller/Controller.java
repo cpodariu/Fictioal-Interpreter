@@ -2,9 +2,11 @@ package Controller;
 
 import Exceptions.ExpressionException;
 import Exceptions.FileException;
+import Exceptions.HeapException;
 import Model.Statements.BaeStatements.IStmt;
 import Model.PrgState;
 import Repo.Repository;
+import Utils.MyFileReader;
 
 import java.util.Collection;
 import java.util.Map;
@@ -24,7 +26,7 @@ public class Controller {
         this.repository = repository;
     }
 
-    public void oneStep() throws ExpressionException, FileException {
+    public void oneStep() throws ExpressionException, FileException, HeapException {
         PrgState state = repository.getState();
         IStmt stmt = state.getStack().pop();
 
@@ -44,13 +46,16 @@ public class Controller {
     }
 
 
-    public void allSteps() throws ExpressionException, FileException {
+    public void allSteps() throws ExpressionException, FileException, HeapException {
         PrgState state = repository.getState();
         System.out.print(state.toString());
-        do
-        {
-            oneStep();
-        }while(!state.getStack().isEmpty());
+        try {
+            do {
+                oneStep();
+            } while (!state.getStack().isEmpty());
+        } finally {
+            state.getFileTable().values().forEach(MyFileReader::close);
+        }
     }
 
     public PrgState getState()

@@ -30,9 +30,15 @@ public class HeapWriteStmt implements IStmt {
         Integer address = symTable.get(varName);
 
         if (!heap.containsKey(address))
-            throw new HeapException("Address ");
+            throw new HeapException("The given address has no corresponding allocated memory");
 
         heap.setValue(address, expression.eval(symTable, heap));
         return state;
+    }
+
+    @Override
+    public String toString()
+    {
+        return "HeapWrite(" + varName + ", " + expression.toString() + ")";
     }
 }

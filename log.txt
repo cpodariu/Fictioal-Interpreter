@@ -566,3 +566,773 @@ Files:
 {}
 Heap:
 {0=20, 1=22}
+
+Exe Stack:
+[new(v, 20), new(a, 22), Model.Statements.HeapStatements.HeapWriteStmt@61443d8f, Print(a), Print(read(a))]
+Sym Table:
+{v=10}
+Out:
+[]
+Files:
+{}
+Heap:
+{}
+
+Exe Stack:
+[new(a, 22), Model.Statements.HeapStatements.HeapWriteStmt@61443d8f, Print(a), Print(read(a))]
+Sym Table:
+{v=0}
+Out:
+[]
+Files:
+{}
+Heap:
+{0=20}
+
+Exe Stack:
+[Model.Statements.HeapStatements.HeapWriteStmt@61443d8f, Print(a), Print(read(a))]
+Sym Table:
+{a=1, v=0}
+Out:
+[]
+Files:
+{}
+Heap:
+{0=20, 1=22}
+
+Exe Stack:
+[Print(a), Print(read(a))]
+Sym Table:
+{a=1, v=0}
+Out:
+[]
+Files:
+{}
+Heap:
+{0=20, 1=20}
+
+Exe Stack:
+[Print(read(a))]
+Sym Table:
+{a=1, v=0}
+Out:
+[1]
+Files:
+{}
+Heap:
+{0=20, 1=20}
+
+Exe Stack:
+[]
+Sym Table:
+{a=1, v=0}
+Out:
+[1, 20]
+Files:
+{}
+Heap:
+{0=20, 1=20}
+
+Exe Stack:
+[new(v, 20), new(a, 22), Model.Statements.HeapStatements.HeapWriteStmt@66048bfd, Print(a), Print(read(a))]
+Sym Table:
+{v=10}
+Out:
+[]
+Files:
+{}
+Heap:
+{}
+
+Exe Stack:
+[new(a, 22), Model.Statements.HeapStatements.HeapWriteStmt@66048bfd, Print(a), Print(read(a))]
+Sym Table:
+{v=1}
+Out:
+[]
+Files:
+{}
+Heap:
+{1=20}
+
+Exe Stack:
+[Model.Statements.HeapStatements.HeapWriteStmt@66048bfd, Print(a), Print(read(a))]
+Sym Table:
+{a=2, v=1}
+Out:
+[]
+Files:
+{}
+Heap:
+{1=20, 2=22}
+
+Exe Stack:
+[Print(a), Print(read(a))]
+Sym Table:
+{a=2, v=1}
+Out:
+[]
+Files:
+{}
+Heap:
+{1=20, 2=20}
+
+Exe Stack:
+[Print(read(a))]
+Sym Table:
+{a=2, v=1}
+Out:
+[2]
+Files:
+{}
+Heap:
+{1=20, 2=20}
+
+Exe Stack:
+[]
+Sym Table:
+{a=2, v=1}
+Out:
+[2, 20]
+Files:
+{}
+Heap:
+{1=20, 2=20}
+
+Exe Stack:
+[new(v, 20), new(a, 22), Model.Statements.HeapStatements.HeapWriteStmt@591f989e, Print(a), Print(read(a)), a = 1]
+Sym Table:
+{v=10}
+Out:
+[]
+Files:
+{}
+Heap:
+{}
+
+Exe Stack:
+[new(a, 22), Model.Statements.HeapStatements.HeapWriteStmt@591f989e, Print(a), Print(read(a)), a = 1]
+Sym Table:
+{v=1}
+Out:
+[]
+Files:
+{}
+Heap:
+{1=20}
+
+Exe Stack:
+[Model.Statements.HeapStatements.HeapWriteStmt@591f989e, Print(a), Print(read(a)), a = 1]
+Sym Table:
+{a=2, v=1}
+Out:
+[]
+Files:
+{}
+Heap:
+{1=20, 2=22}
+
+Exe Stack:
+[Print(a), Print(read(a)), a = 1]
+Sym Table:
+{a=2, v=1}
+Out:
+[]
+Files:
+{}
+Heap:
+{1=20, 2=20}
+
+Exe Stack:
+[Print(read(a)), a = 1]
+Sym Table:
+{a=2, v=1}
+Out:
+[2]
+Files:
+{}
+Heap:
+{1=20, 2=20}
+
+Exe Stack:
+[a = 1]
+Sym Table:
+{a=2, v=1}
+Out:
+[2, 20]
+Files:
+{}
+Heap:
+{1=20, 2=20}
+
+Exe Stack:
+[]
+Sym Table:
+{a=1, v=1}
+Out:
+[2, 20]
+Files:
+{}
+Heap:
+{1=20}
+
+Exe Stack:
+[Model.Statements.BaeStatements.WhileStmt@233c0b17, ( a = a - 1; Print(a) ), Print(a)]
+Sym Table:
+{a=6}
+Out:
+[]
+Files:
+{}
+Heap:
+{}
+
+Exe Stack:
+[( a = a - 1; Print(a) ), Model.Statements.BaeStatements.WhileStmt@233c0b17, ( a = a - 1; Print(a) ), Print(a)]
+Sym Table:
+{a=6}
+Out:
+[]
+Files:
+{}
+Heap:
+{}
+
+Exe Stack:
+[a = a - 1, Print(a), Model.Statements.BaeStatements.WhileStmt@233c0b17, ( a = a - 1; Print(a) ), Print(a)]
+Sym Table:
+{a=6}
+Out:
+[]
+Files:
+{}
+Heap:
+{}
+
+Exe Stack:
+[Print(a), Model.Statements.BaeStatements.WhileStmt@233c0b17, ( a = a - 1; Print(a) ), Print(a)]
+Sym Table:
+{a=5}
+Out:
+[]
+Files:
+{}
+Heap:
+{}
+
+Exe Stack:
+[Model.Statements.BaeStatements.WhileStmt@233c0b17, ( a = a - 1; Print(a) ), Print(a)]
+Sym Table:
+{a=5}
+Out:
+[5]
+Files:
+{}
+Heap:
+{}
+
+Exe Stack:
+[( a = a - 1; Print(a) ), Model.Statements.BaeStatements.WhileStmt@233c0b17, ( a = a - 1; Print(a) ), Print(a)]
+Sym Table:
+{a=5}
+Out:
+[5]
+Files:
+{}
+Heap:
+{}
+
+Exe Stack:
+[a = a - 1, Print(a), Model.Statements.BaeStatements.WhileStmt@233c0b17, ( a = a - 1; Print(a) ), Print(a)]
+Sym Table:
+{a=5}
+Out:
+[5]
+Files:
+{}
+Heap:
+{}
+
+Exe Stack:
+[Print(a), Model.Statements.BaeStatements.WhileStmt@233c0b17, ( a = a - 1; Print(a) ), Print(a)]
+Sym Table:
+{a=4}
+Out:
+[5]
+Files:
+{}
+Heap:
+{}
+
+Exe Stack:
+[Model.Statements.BaeStatements.WhileStmt@233c0b17, ( a = a - 1; Print(a) ), Print(a)]
+Sym Table:
+{a=4}
+Out:
+[5, 4]
+Files:
+{}
+Heap:
+{}
+
+Exe Stack:
+[Print(a)]
+Sym Table:
+{a=4}
+Out:
+[5, 4]
+Files:
+{}
+Heap:
+{}
+
+Exe Stack:
+[]
+Sym Table:
+{a=4}
+Out:
+[5, 4, 4]
+Files:
+{}
+Heap:
+{}
+
+Exe Stack:
+[new(v, 20), new(a, 22), HeapWrite(a, 20), Print(a), Print(read(a)), a = 1]
+Sym Table:
+{v=10}
+Out:
+[]
+Files:
+{}
+Heap:
+{}
+
+Exe Stack:
+[new(a, 22), HeapWrite(a, 20), Print(a), Print(read(a)), a = 1]
+Sym Table:
+{v=1}
+Out:
+[]
+Files:
+{}
+Heap:
+{1=20}
+
+Exe Stack:
+[HeapWrite(a, 20), Print(a), Print(read(a)), a = 1]
+Sym Table:
+{a=2, v=1}
+Out:
+[]
+Files:
+{}
+Heap:
+{1=20, 2=22}
+
+Exe Stack:
+[Print(a), Print(read(a)), a = 1]
+Sym Table:
+{a=2, v=1}
+Out:
+[]
+Files:
+{}
+Heap:
+{1=20, 2=20}
+
+Exe Stack:
+[Print(read(a)), a = 1]
+Sym Table:
+{a=2, v=1}
+Out:
+[2]
+Files:
+{}
+Heap:
+{1=20, 2=20}
+
+Exe Stack:
+[a = 1]
+Sym Table:
+{a=2, v=1}
+Out:
+[2, 20]
+Files:
+{}
+Heap:
+{1=20, 2=20}
+
+Exe Stack:
+[]
+Sym Table:
+{a=1, v=1}
+Out:
+[2, 20]
+Files:
+{}
+Heap:
+{1=20}
+
+Exe Stack:
+[WhileStmt(a - 4), ( a = a - 1; Print(a) ), Print(a)]
+Sym Table:
+{a=6}
+Out:
+[]
+Files:
+{}
+Heap:
+{}
+
+Exe Stack:
+[( a = a - 1; Print(a) ), WhileStmt(a - 4), ( a = a - 1; Print(a) ), Print(a)]
+Sym Table:
+{a=6}
+Out:
+[]
+Files:
+{}
+Heap:
+{}
+
+Exe Stack:
+[a = a - 1, Print(a), WhileStmt(a - 4), ( a = a - 1; Print(a) ), Print(a)]
+Sym Table:
+{a=6}
+Out:
+[]
+Files:
+{}
+Heap:
+{}
+
+Exe Stack:
+[Print(a), WhileStmt(a - 4), ( a = a - 1; Print(a) ), Print(a)]
+Sym Table:
+{a=5}
+Out:
+[]
+Files:
+{}
+Heap:
+{}
+
+Exe Stack:
+[WhileStmt(a - 4), ( a = a - 1; Print(a) ), Print(a)]
+Sym Table:
+{a=5}
+Out:
+[5]
+Files:
+{}
+Heap:
+{}
+
+Exe Stack:
+[( a = a - 1; Print(a) ), WhileStmt(a - 4), ( a = a - 1; Print(a) ), Print(a)]
+Sym Table:
+{a=5}
+Out:
+[5]
+Files:
+{}
+Heap:
+{}
+
+Exe Stack:
+[a = a - 1, Print(a), WhileStmt(a - 4), ( a = a - 1; Print(a) ), Print(a)]
+Sym Table:
+{a=5}
+Out:
+[5]
+Files:
+{}
+Heap:
+{}
+
+Exe Stack:
+[Print(a), WhileStmt(a - 4), ( a = a - 1; Print(a) ), Print(a)]
+Sym Table:
+{a=4}
+Out:
+[5]
+Files:
+{}
+Heap:
+{}
+
+Exe Stack:
+[WhileStmt(a - 4), ( a = a - 1; Print(a) ), Print(a)]
+Sym Table:
+{a=4}
+Out:
+[5, 4]
+Files:
+{}
+Heap:
+{}
+
+Exe Stack:
+[Print(a)]
+Sym Table:
+{a=4}
+Out:
+[5, 4]
+Files:
+{}
+Heap:
+{}
+
+Exe Stack:
+[]
+Sym Table:
+{a=4}
+Out:
+[5, 4, 4]
+Files:
+{}
+Heap:
+{}
+
+Exe Stack:
+[WhileStmt(a - 4), ( a = a - 1; Print(a) ), Print(a)]
+Sym Table:
+{a=6}
+Out:
+[]
+Files:
+{}
+Heap:
+{}
+
+Exe Stack:
+[( a = a - 1; Print(a) ), WhileStmt(a - 4), ( a = a - 1; Print(a) ), Print(a)]
+Sym Table:
+{a=6}
+Out:
+[]
+Files:
+{}
+Heap:
+{}
+
+Exe Stack:
+[a = a - 1, Print(a), WhileStmt(a - 4), ( a = a - 1; Print(a) ), Print(a)]
+Sym Table:
+{a=6}
+Out:
+[]
+Files:
+{}
+Heap:
+{}
+
+Exe Stack:
+[Print(a), WhileStmt(a - 4), ( a = a - 1; Print(a) ), Print(a)]
+Sym Table:
+{a=5}
+Out:
+[]
+Files:
+{}
+Heap:
+{}
+
+Exe Stack:
+[WhileStmt(a - 4), ( a = a - 1; Print(a) ), Print(a)]
+Sym Table:
+{a=5}
+Out:
+[5]
+Files:
+{}
+Heap:
+{}
+
+Exe Stack:
+[( a = a - 1; Print(a) ), WhileStmt(a - 4), ( a = a - 1; Print(a) ), Print(a)]
+Sym Table:
+{a=5}
+Out:
+[5]
+Files:
+{}
+Heap:
+{}
+
+Exe Stack:
+[a = a - 1, Print(a), WhileStmt(a - 4), ( a = a - 1; Print(a) ), Print(a)]
+Sym Table:
+{a=5}
+Out:
+[5]
+Files:
+{}
+Heap:
+{}
+
+Exe Stack:
+[Print(a), WhileStmt(a - 4), ( a = a - 1; Print(a) ), Print(a)]
+Sym Table:
+{a=4}
+Out:
+[5]
+Files:
+{}
+Heap:
+{}
+
+Exe Stack:
+[WhileStmt(a - 4), ( a = a - 1; Print(a) ), Print(a)]
+Sym Table:
+{a=4}
+Out:
+[5, 4]
+Files:
+{}
+Heap:
+{}
+
+Exe Stack:
+[Print(a)]
+Sym Table:
+{a=4}
+Out:
+[5, 4]
+Files:
+{}
+Heap:
+{}
+
+Exe Stack:
+[]
+Sym Table:
+{a=4}
+Out:
+[5, 4, 4]
+Files:
+{}
+Heap:
+{}
+
+Exe Stack:
+[WhileStmt(a - 4), ( a = a - 1; Print(a) ), Print(a)]
+Sym Table:
+{a=6}
+Out:
+[]
+Files:
+{}
+Heap:
+{}
+
+Exe Stack:
+[( a = a - 1; Print(a) ), WhileStmt(a - 4), ( a = a - 1; Print(a) ), Print(a)]
+Sym Table:
+{a=6}
+Out:
+[]
+Files:
+{}
+Heap:
+{}
+
+Exe Stack:
+[a = a - 1, Print(a), WhileStmt(a - 4), ( a = a - 1; Print(a) ), Print(a)]
+Sym Table:
+{a=6}
+Out:
+[]
+Files:
+{}
+Heap:
+{}
+
+Exe Stack:
+[Print(a), WhileStmt(a - 4), ( a = a - 1; Print(a) ), Print(a)]
+Sym Table:
+{a=5}
+Out:
+[]
+Files:
+{}
+Heap:
+{}
+
+Exe Stack:
+[WhileStmt(a - 4), ( a = a - 1; Print(a) ), Print(a)]
+Sym Table:
+{a=5}
+Out:
+[5]
+Files:
+{}
+Heap:
+{}
+
+Exe Stack:
+[( a = a - 1; Print(a) ), WhileStmt(a - 4), ( a = a - 1; Print(a) ), Print(a)]
+Sym Table:
+{a=5}
+Out:
+[5]
+Files:
+{}
+Heap:
+{}
+
+Exe Stack:
+[a = a - 1, Print(a), WhileStmt(a - 4), ( a = a - 1; Print(a) ), Print(a)]
+Sym Table:
+{a=5}
+Out:
+[5]
+Files:
+{}
+Heap:
+{}
+
+Exe Stack:
+[Print(a), WhileStmt(a - 4), ( a = a - 1; Print(a) ), Print(a)]
+Sym Table:
+{a=4}
+Out:
+[5]
+Files:
+{}
+Heap:
+{}
+
+Exe Stack:
+[WhileStmt(a - 4), ( a = a - 1; Print(a) ), Print(a)]
+Sym Table:
+{a=4}
+Out:
+[5, 4]
+Files:
+{}
+Heap:
+{}
+
+Exe Stack:
+[Print(a)]
+Sym Table:
+{a=4}
+Out:
+[5, 4]
+Files:
+{}
+Heap:
+{}
+
+Exe Stack:
+[]
+Sym Table:
+{a=4}
+Out:
+[5, 4, 4]
+Files:
+{}
+Heap:
+{}

@@ -9,6 +9,7 @@ import Model.Statements.FileStatements.CloseRFileStmt;
 import Model.Statements.FileStatements.OpenRFileStmt;
 import Model.Statements.FileStatements.ReadFileStmt;
 import Model.Statements.HeapStatements.HeapAllocStmt;
+import Model.Statements.HeapStatements.HeapWriteStmt;
 import Repo.Repository;
 import Utils.PrimitiveADT.MyDictionary;
 import Utils.MyFileReader;
@@ -17,6 +18,8 @@ import Utils.PrimitiveADT.MyStack;
 import View.ExitCommand;
 import View.RunExampleCommand;
 import View.TextMenu;
+
+import java.lang.invoke.ConstantCallSite;
 
 public class Interpreter {
 	public static void main(String[] args) {
@@ -83,6 +86,42 @@ public class Interpreter {
 		c6.getState().getStack().push(new HeapAllocStmt("v", new ConstExp(20)));
 		c6.getState().getStack().push(new AssignStmt("v", new ConstExp(10)));
 
+//		v=10;new(v,20);new(a,22);wH(a,30);print(a);print(rH(a))
+
+		PrgState st7 = new PrgState();
+		Repository r7 = new Repository(st7, log);
+		Controller c7 = new Controller(r7);
+		c7.getState().getStack().push(new PrintStmt(new HeapReadExp("a")));
+		c7.getState().getStack().push(new PrintStmt(new VarExp("a")));
+		c7.getState().getStack().push(new HeapWriteStmt("a", new ConstExp(20)));
+		c7.getState().getStack().push(new HeapAllocStmt("a", new ConstExp(22)));
+		c7.getState().getStack().push(new HeapAllocStmt("v", new ConstExp(20)));
+		c7.getState().getStack().push(new AssignStmt("v", new ConstExp(10)));
+
+//      v=10;new(v,20);new(a,22);wH(a,30);print(a);print(rH(a));a=0
+
+
+		PrgState st8 = new PrgState();
+		Repository r8 = new Repository(st8, log);
+		Controller c8 = new Controller(r8);
+		c8.getState().getStack().push(new AssignStmt("a", new ConstExp(1)));
+		c8.getState().getStack().push(new PrintStmt(new HeapReadExp("a")));
+		c8.getState().getStack().push(new PrintStmt(new VarExp("a")));
+		c8.getState().getStack().push(new HeapWriteStmt("a", new ConstExp(20)));
+		c8.getState().getStack().push(new HeapAllocStmt("a", new ConstExp(22)));
+		c8.getState().getStack().push(new HeapAllocStmt("v", new ConstExp(20)));
+		c8.getState().getStack().push(new AssignStmt("v", new ConstExp(10)));
+
+
+		PrgState st9 = new PrgState();
+		Repository r9 = new Repository(st9, log);
+		Controller c9 = new Controller(r9);
+		c9.getState().getStack().push(new PrintStmt(new VarExp("a")));
+		c9.getState().getStack().push(new CompStmt( new AssignStmt("a", new ArithExp('-', new VarExp("a"), new ConstExp(1))),
+													new PrintStmt(new VarExp("a"))));
+		c9.getState().getStack().push(new WhileStmt(new ArithExp(new VarExp("a"), new ConstExp(4), '-')));
+		c9.getState().getStack().push(new AssignStmt("a", new ConstExp(6)));
+
 
 		TextMenu t = new TextMenu();
 		t.addCommand(new ExitCommand("0", "exit"));
@@ -92,6 +131,9 @@ public class Interpreter {
 		t.addCommand(new RunExampleCommand("4", "Example 4", c4));
 		t.addCommand(new RunExampleCommand("5", "Example 5", c5));
 		t.addCommand(new RunExampleCommand("6", "Example 6", c6));
+		t.addCommand(new RunExampleCommand("7", "Example 7", c7));
+		t.addCommand(new RunExampleCommand("8", "Example 8", c8));
+		t.addCommand(new RunExampleCommand("9", "Example 9", c9));
 		t.show();
 	}
 }
