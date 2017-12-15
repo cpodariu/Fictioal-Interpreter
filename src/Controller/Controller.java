@@ -25,21 +25,21 @@ public class Controller {
     {
         this.repository = repository;
     }
-
-    public void oneStep() throws ExpressionException, FileException, HeapException {
-        PrgState state = repository.getState();
-        IStmt stmt = state.getStack().pop();
-
-        stmt.execute(state);
-
-        state.getHeap().setContent(conservativeGarbageCollector(
-                state.getSymTable().values(),
-                state.getHeap().getContent()));
-
-        repository.logPrgStateExec();
-
-        System.out.print(state.toString());
-    }
+//
+//    public void oneStep() throws ExpressionException, FileException, HeapException {
+//        PrgState state = repository.getState();
+//        IStmt stmt = state.getStack().pop();
+//
+//        stmt.execute(state);
+//
+//        state.getHeap().setContent(conservativeGarbageCollector(
+//                state.getSymTable().values(),
+//                state.getHeap().getContent()));
+//
+//        repository.logPrgStateExec();
+//
+//        System.out.print(state.toString());
+//    }
 
     Map<Integer,Integer> conservativeGarbageCollector(Collection<Integer> symTableValues, Map<Integer,Integer> heap){
         return heap.entrySet().stream().filter(e->symTableValues.contains(e.getKey())).collect(Collectors.toMap(Map.Entry::getKey, Map.Entry::getValue));

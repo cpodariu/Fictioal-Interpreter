@@ -1,5 +1,8 @@
 package Model;
 
+import Exceptions.ExpressionException;
+import Exceptions.FileException;
+import Exceptions.HeapException;
 import Model.Statements.BaeStatements.IStmt;
 import Utils.Interfaces.MyIHeap;
 import Utils.MyFileReader;
@@ -12,11 +15,21 @@ import Utils.PrimitiveADT.MyList;
 import Utils.PrimitiveADT.MyStack;
 
 public class PrgState {
-    MyIStack<IStmt> exeStack;
-    MyIDictionary<String,Integer> symTable;
-    MyIList<String> out;
-    MyIDictionary<Integer, MyFileReader> fileTable;
-    MyIHeap heap;
+    private MyIStack<IStmt> exeStack;
+    private MyIDictionary<String,Integer> symTable;
+    private MyIList<String> out;
+    private MyIDictionary<Integer, MyFileReader> fileTable;
+    private MyIHeap heap;
+	private int id;
+
+	public int getId() {
+		return id;
+	}
+
+	public void setId(int id) {
+		this.id = id;
+	}
+
 
     public PrgState()
     {
@@ -92,4 +105,11 @@ public class PrgState {
     public boolean isNotCompleted(){
     	return !this.exeStack.isEmpty();
     }
+
+//    TODO: StatementExecutionException
+	PrgState oneStep() throws HeapException, FileException, ExpressionException, Exception {
+		if(exeStack.isEmpty()) throw new Exception("asd");
+		IStmt crtStmt = exeStack.pop();
+		return crtStmt.execute(this);
+	}
 }
