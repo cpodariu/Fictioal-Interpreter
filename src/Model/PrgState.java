@@ -88,4 +88,8 @@ public class PrgState {
     public void setHeap(MyIHeap heap) {
         this.heap = heap;
     }
+
+    public boolean isNotCompleted(){
+    	return !this.exeStack.isEmpty();
+    }
 }
