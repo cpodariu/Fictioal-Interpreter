@@ -2,17 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="bd0686cb-7a9d-43ae-bd49-d15233016edd" name="Default" comment="">
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/Model/Expressions/BooleanExp.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/Model/Statements/BaeStatements/WhileStmt.java" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change beforePath="$PROJECT_DIR$/log.txt" afterPath="$PROJECT_DIR$/log.txt" />
-      <change beforePath="$PROJECT_DIR$/src/Controller/Controller.java" afterPath="$PROJECT_DIR$/src/Controller/Controller.java" />
       <change beforePath="$PROJECT_DIR$/src/Interpreter.java" afterPath="$PROJECT_DIR$/src/Interpreter.java" />
-      <change beforePath="$PROJECT_DIR$/src/Model/Expressions/ArithExp.java" afterPath="$PROJECT_DIR$/src/Model/Expressions/ArithExp.java" />
-      <change beforePath="$PROJECT_DIR$/src/Model/Statements/HeapStatements/HeapAllocStmt.java" afterPath="$PROJECT_DIR$/src/Model/Statements/HeapStatements/HeapAllocStmt.java" />
-      <change beforePath="$PROJECT_DIR$/src/Model/Statements/HeapStatements/HeapWriteStmt.java" afterPath="$PROJECT_DIR$/src/Model/Statements/HeapStatements/HeapWriteStmt.java" />
-      <change beforePath="$PROJECT_DIR$/src/Utils/MyHeap.java" afterPath="$PROJECT_DIR$/src/Utils/MyHeap.java" />
-      <change beforePath="$PROJECT_DIR$/src/Utils/PrimitiveADT/MyDictionary.java" afterPath="$PROJECT_DIR$/src/Utils/PrimitiveADT/MyDictionary.java" />
+      <change beforePath="$PROJECT_DIR$/src/Model/Statements/BaeStatements/WhileStmt.java" afterPath="$PROJECT_DIR$/src/Model/Statements/BaeStatements/WhileStmt.java" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -30,31 +23,18 @@
       <file leaf-file-name="Interpreter.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Interpreter.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="54">
-              <caret line="23" column="18" lean-forward="false" selection-start-line="23" selection-start-column="18" selection-end-line="23" selection-end-column="18" />
+            <state relative-caret-position="378">
+              <caret line="35" column="32" lean-forward="false" selection-start-line="35" selection-start-column="24" selection-end-line="35" selection-end-column="32" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="TextMenu.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/View/TextMenu.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="621">
-              <caret line="43" column="20" lean-forward="true" selection-start-line="43" selection-start-column="20" selection-end-line="43" selection-end-column="20" />
-              <folding>
-                <element signature="e#271#272#0" expanded="true" />
-                <element signature="e#312#313#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Controller.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="Controller.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Controller/Controller.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="191">
-              <caret line="55" column="19" lean-forward="true" selection-start-line="55" selection-start-column="19" selection-end-line="55" selection-end-column="19" />
+            <state relative-caret-position="1161">
+              <caret line="59" column="0" lean-forward="false" selection-start-line="59" selection-start-column="0" selection-end-line="59" selection-end-column="0" />
               <folding>
                 <element signature="e#1736#1737#0" expanded="true" />
                 <element signature="e#1780#1781#0" expanded="true" />
@@ -65,11 +45,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="MyFileReader.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Utils/MyFileReader.java">
+      <file leaf-file-name="BooleanExp.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Model/Expressions/BooleanExp.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="94">
-              <caret line="8" column="31" lean-forward="false" selection-start-line="8" selection-start-column="22" selection-end-line="8" selection-end-column="31" />
+            <state relative-caret-position="1458">
+              <caret line="58" column="22" lean-forward="false" selection-start-line="58" selection-start-column="22" selection-end-line="58" selection-end-column="22" />
               <folding />
             </state>
           </provider>
@@ -78,21 +58,18 @@
       <file leaf-file-name="PrgState.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Model/PrgState.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="428">
-              <caret line="79" column="48" lean-forward="false" selection-start-line="79" selection-start-column="48" selection-end-line="79" selection-end-column="48" />
-              <folding>
-                <element signature="e#2292#2293#0" expanded="true" />
-                <element signature="e#2315#2316#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="270">
+              <caret line="19" column="0" lean-forward="false" selection-start-line="19" selection-start-column="0" selection-end-line="19" selection-end-column="0" />
+              <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="RunExampleCommand.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/View/RunExampleCommand.java">
+      <file leaf-file-name="MyFileReader.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Utils/MyFileReader.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="270">
-              <caret line="10" column="21" lean-forward="false" selection-start-line="10" selection-start-column="21" selection-end-line="10" selection-end-column="21" />
+            <state relative-caret-position="189">
+              <caret line="8" column="31" lean-forward="false" selection-start-line="8" selection-start-column="22" selection-end-line="8" selection-end-column="31" />
               <folding />
             </state>
           </provider>
@@ -101,7 +78,7 @@
       <file leaf-file-name="MyHeap.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Utils/MyHeap.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="27">
+            <state relative-caret-position="54">
               <caret line="2" column="0" lean-forward="false" selection-start-line="2" selection-start-column="0" selection-end-line="2" selection-end-column="0" />
               <folding>
                 <element signature="e#535#536#0" expanded="true" />
@@ -128,9 +105,23 @@
       <file leaf-file-name="Map.java" pinned="false" current-in-tab="false">
         <entry file="jar://C:/Program Files/Java/jdk-9.0.1/lib/src.zip!/java.base/java/util/Map.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="279">
+            <state relative-caret-position="9801">
               <caret line="389" column="25" lean-forward="false" selection-start-line="389" selection-start-column="25" selection-end-line="389" selection-end-column="25" />
               <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="WhileStmt.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/Model/Statements/BaeStatements/WhileStmt.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="675">
+              <caret line="25" column="29" lean-forward="true" selection-start-line="25" selection-start-column="29" selection-end-line="25" selection-end-column="29" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#808#809#0" expanded="true" />
+                <element signature="e#893#894#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -235,13 +226,13 @@
         <option value="$PROJECT_DIR$/src/Model/Expressions/Exp.java" />
         <option value="$PROJECT_DIR$/src/Model/Expressions/ArithExp.java" />
         <option value="$PROJECT_DIR$/src/Model/Expressions/BooleanExp.java" />
-        <option value="$PROJECT_DIR$/src/Interpreter.java" />
         <option value="$PROJECT_DIR$/src/Model/Statements/HeapStatements/HeapWriteStmt.java" />
         <option value="$PROJECT_DIR$/src/Model/Statements/HeapStatements/HeapAllocStmt.java" />
         <option value="$PROJECT_DIR$/src/Utils/PrimitiveADT/MyDictionary.java" />
         <option value="$PROJECT_DIR$/src/Utils/MyHeap.java" />
-        <option value="$PROJECT_DIR$/src/Model/Statements/BaeStatements/WhileStmt.java" />
         <option value="$PROJECT_DIR$/src/Utils/Interfaces/MyIDictionary.java" />
+        <option value="$PROJECT_DIR$/src/Interpreter.java" />
+        <option value="$PROJECT_DIR$/src/Model/Statements/BaeStatements/WhileStmt.java" />
         <option value="$PROJECT_DIR$/src/Controller/Controller.java" />
       </list>
     </option>
@@ -415,8 +406,18 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="PackagesPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="Fictioal-Interpreter" type="58d84e3e:PackageViewProjectNode" />
+              <item name="Fictioal-Interpreter" type="616d4139:PackageViewModuleNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
       <pane id="AndroidView" />
-      <pane id="Scratches" />
       <pane id="Scope">
         <subPane subId="Project Files">
           <expand>
@@ -439,6 +440,7 @@
           <select />
         </subPane>
       </pane>
+      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -548,23 +550,12 @@
           <select />
         </subPane>
       </pane>
-      <pane id="PackagesPane">
-        <subPane>
-          <expand>
-            <path>
-              <item name="Fictioal-Interpreter" type="58d84e3e:PackageViewProjectNode" />
-              <item name="Fictioal-Interpreter" type="616d4139:PackageViewModuleNode" />
-            </path>
-          </expand>
-          <select />
-        </subPane>
-      </pane>
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="SearchEverywhereHistoryKey" value="File&#9;FILE&#9;file://C:/Users/cpodariu/OneDrive/Desktop/Fictioal-Interpreter/src/Utils/MyFileReader.java&#10;Allstep&#9;PSI&#9;JAVA://Controller.Controller#allSteps&#10;Whi&#9;FILE&#9;file://C:/Users/cpodariu/OneDrive/Desktop/Fictioal-Interpreter/src/Model/Statements/BaeStatements/WhileStmt.java&#10;HeapWrite&#9;FILE&#9;file://C:/Users/cpodariu/OneDrive/Desktop/Fictioal-Interpreter/src/Model/Statements/HeapStatements/HeapWriteStmt.java&#10;Heap&#9;FILE&#9;file://C:/Users/cpodariu/OneDrive/Desktop/Fictioal-Interpreter/src/Utils/MyHeap.java&#10;MyHea&#9;FILE&#9;file://C:/Users/cpodariu/OneDrive/Desktop/Fictioal-Interpreter/src/Utils/MyHeap.java&#10;MyIh&#9;FILE&#9;file://C:/Users/cpodariu/OneDrive/Desktop/Fictioal-Interpreter/src/Utils/Interfaces/MyIHeap.java&#10;MyHeap&#9;FILE&#9;file://C:/Users/cpodariu/OneDrive/Desktop/Fictioal-Interpreter/src/Utils/MyHeap.java&#10;repo&#9;FILE&#9;file://C:/Users/cpodariu/OneDrive/Desktop/Fictioal-Interpreter/src/Repo/Repository.java&#10;MyDi&#9;FILE&#9;file://C:/Users/cpodariu/OneDrive/Desktop/Fictioal-Interpreter/src/Utils/PrimitiveADT/MyDictionary.java&#10;MyDic&#9;FILE&#9;file://C:/Users/cpodariu/OneDrive/Desktop/Fictioal-Interpreter/src/Utils/PrimitiveADT/MyDictionary.java&#10;heap&#9;FILE&#9;file://C:/Users/cpodariu/OneDrive/Desktop/Fictioal-Interpreter/src/Utils/MyHeap.java&#10;Integer&#9;PSI&#9;JAVA://java.lang.Integer&#10;Number&#9;PSI&#9;JAVA://java.lang.Number&#10;Myd&#9;FILE&#9;file://C:/Users/cpodariu/OneDrive/Desktop/Fictioal-Interpreter/src/Utils/PrimitiveADT/MyDictionary.java&#10;state&#9;FILE&#9;file://C:/Users/cpodariu/Desktop/Fictioal-Interpreter/src/Model/PrgState.java&#10;controller&#9;FILE&#9;file://C:/Users/cpodariu/Desktop/Fictioal-Interpreter/src/Controller/Controller.java&#10;execute&#9;PSI&#9;JAVA://View.Command#execute&#10;MyIHe&#9;FILE&#9;file:///home/cpodariu/Desktop/Fictioal-Interpreter/src/Utils/MyIHeap.java&#10;MyI&#9;FILE&#9;file:///home/cpodariu/Desktop/Fictioal-Interpreter/src/Utils/MyIHeap.java&#10;cont&#9;FILE&#9;file:///home/cpodariu/Desktop/Fictioal-Interpreter/src/Controller/Controller.java&#10;close&#9;FILE&#9;file:///home/cpodariu/Desktop/Fictioal-Interpreter/src/Model/CloseRFileStmt.java&#10;mai&#9;FILE&#9;file:///home/cpodariu/Desktop/Fictioal-Interpreter/src/Main.java&#10;fileta&#9;PSI&#9;JAVA://Model.PrgState#fileTable&#10;oneStep&#9;PSI&#9;JAVA://Controller.Controller#oneStep&#10;repositoryInt&#9;PSI&#9;JAVA://com.sun.corba.se.impl.orbutil.RepositoryIdInterface&#10;console&#9;FILE&#9;file:///home/cpodariu/Desktop/MAP/Fictioal-Interpreter/src/View/Console.java&#10;Controller&#9;FILE&#9;file:///home/cpodariu/Desktop/MAP/Fictioal-Interpreter/src/Controller/Controller.java&#10;controle&#9;PSI&#9;JAVA://javax.sound.midi.ControllerEventListener" />
+    <property name="SearchEverywhereHistoryKey" value="Boole&#9;FILE&#9;file://C:/Users/cpodariu/OneDrive/Desktop/Fictioal-Interpreter/src/Model/Expressions/BooleanExp.java&#10;While&#9;FILE&#9;file://C:/Users/cpodariu/OneDrive/Desktop/Fictioal-Interpreter/src/Model/Statements/BaeStatements/WhileStmt.java&#10;File&#9;FILE&#9;file://C:/Users/cpodariu/OneDrive/Desktop/Fictioal-Interpreter/src/Utils/MyFileReader.java&#10;Allstep&#9;PSI&#9;JAVA://Controller.Controller#allSteps&#10;Whi&#9;FILE&#9;file://C:/Users/cpodariu/OneDrive/Desktop/Fictioal-Interpreter/src/Model/Statements/BaeStatements/WhileStmt.java&#10;HeapWrite&#9;FILE&#9;file://C:/Users/cpodariu/OneDrive/Desktop/Fictioal-Interpreter/src/Model/Statements/HeapStatements/HeapWriteStmt.java&#10;Heap&#9;FILE&#9;file://C:/Users/cpodariu/OneDrive/Desktop/Fictioal-Interpreter/src/Utils/MyHeap.java&#10;MyHea&#9;FILE&#9;file://C:/Users/cpodariu/OneDrive/Desktop/Fictioal-Interpreter/src/Utils/MyHeap.java&#10;MyIh&#9;FILE&#9;file://C:/Users/cpodariu/OneDrive/Desktop/Fictioal-Interpreter/src/Utils/Interfaces/MyIHeap.java&#10;MyHeap&#9;FILE&#9;file://C:/Users/cpodariu/OneDrive/Desktop/Fictioal-Interpreter/src/Utils/MyHeap.java&#10;repo&#9;FILE&#9;file://C:/Users/cpodariu/OneDrive/Desktop/Fictioal-Interpreter/src/Repo/Repository.java&#10;MyDi&#9;FILE&#9;file://C:/Users/cpodariu/OneDrive/Desktop/Fictioal-Interpreter/src/Utils/PrimitiveADT/MyDictionary.java&#10;MyDic&#9;FILE&#9;file://C:/Users/cpodariu/OneDrive/Desktop/Fictioal-Interpreter/src/Utils/PrimitiveADT/MyDictionary.java&#10;heap&#9;FILE&#9;file://C:/Users/cpodariu/OneDrive/Desktop/Fictioal-Interpreter/src/Utils/MyHeap.java&#10;Integer&#9;PSI&#9;JAVA://java.lang.Integer&#10;Number&#9;PSI&#9;JAVA://java.lang.Number&#10;Myd&#9;FILE&#9;file://C:/Users/cpodariu/OneDrive/Desktop/Fictioal-Interpreter/src/Utils/PrimitiveADT/MyDictionary.java&#10;state&#9;FILE&#9;file://C:/Users/cpodariu/Desktop/Fictioal-Interpreter/src/Model/PrgState.java&#10;controller&#9;FILE&#9;file://C:/Users/cpodariu/Desktop/Fictioal-Interpreter/src/Controller/Controller.java&#10;execute&#9;PSI&#9;JAVA://View.Command#execute&#10;MyIHe&#9;FILE&#9;file:///home/cpodariu/Desktop/Fictioal-Interpreter/src/Utils/MyIHeap.java&#10;MyI&#9;FILE&#9;file:///home/cpodariu/Desktop/Fictioal-Interpreter/src/Utils/MyIHeap.java&#10;cont&#9;FILE&#9;file:///home/cpodariu/Desktop/Fictioal-Interpreter/src/Controller/Controller.java&#10;close&#9;FILE&#9;file:///home/cpodariu/Desktop/Fictioal-Interpreter/src/Model/CloseRFileStmt.java&#10;mai&#9;FILE&#9;file:///home/cpodariu/Desktop/Fictioal-Interpreter/src/Main.java&#10;fileta&#9;PSI&#9;JAVA://Model.PrgState#fileTable&#10;oneStep&#9;PSI&#9;JAVA://Controller.Controller#oneStep&#10;repositoryInt&#9;PSI&#9;JAVA://com.sun.corba.se.impl.orbutil.RepositoryIdInterface&#10;console&#9;FILE&#9;file:///home/cpodariu/Desktop/MAP/Fictioal-Interpreter/src/View/Console.java&#10;Controller&#9;FILE&#9;file:///home/cpodariu/Desktop/MAP/Fictioal-Interpreter/src/Controller/Controller.java&#10;controle&#9;PSI&#9;JAVA://javax.sound.midi.ControllerEventListener" />
     <property name="project.structure.last.edited" value="Facets" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.2" />
@@ -682,11 +673,14 @@
       <workItem from="1513110241794" duration="604000" />
       <workItem from="1513260814175" duration="2726000" />
       <workItem from="1513291338766" duration="1416000" />
+      <workItem from="1513335907326" duration="22000" />
+      <workItem from="1513542773287" duration="378000" />
+      <workItem from="1513678385260" duration="29000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="69458000" />
+    <option name="totallyTimeSpent" value="71840000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-11" y="-11" width="1942" height="1042" extended-state="6" />
@@ -694,7 +688,6 @@
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.29931194" sideWeight="0.48958334" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -717,6 +710,7 @@
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.29931194" sideWeight="0.48958334" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="REST Client" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.41259843" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Thumbnails" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32913387" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
@@ -754,8 +748,11 @@
     <entry file="jar://$USER_HOME$/Downloads/jdk-9.0.1_linux-x64_bin/jdk-9.0.1/lib/src.zip!/java.base/java/util/HashMap.java" />
     <entry file="file://$PROJECT_DIR$/src/Repo/RepositoryInterface.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="4" column="36" lean-forward="false" selection-start-line="4" selection-start-column="17" selection-end-line="4" selection-end-column="36" />
+        <state relative-caret-position="162">
+          <caret line="6" column="14" lean-forward="false" selection-start-line="6" selection-start-column="14" selection-end-line="6" selection-end-column="14" />
+          <folding>
+            <element signature="imports" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -924,12 +921,10 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Repo/Repository.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="648">
-          <caret line="24" column="23" lean-forward="false" selection-start-line="24" selection-start-column="23" selection-end-line="24" selection-end-column="23" />
+        <state relative-caret-position="378">
+          <caret line="16" column="30" lean-forward="false" selection-start-line="16" selection-start-column="30" selection-end-line="16" selection-end-column="30" />
           <folding>
-            <element signature="imports" expanded="false" />
-            <element signature="e#573#574#0" expanded="false" />
-            <element signature="e#665#666#0" expanded="false" />
+            <marker date="1513333109745" expanded="true" signature="1060:1130" ph="{...}" />
           </folding>
         </state>
       </provider>
@@ -938,13 +933,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="162">
           <caret line="8" column="24" lean-forward="false" selection-start-line="8" selection-start-column="24" selection-end-line="8" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Model/Expressions/BooleanExp.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="142">
-          <caret line="59" column="30" lean-forward="false" selection-start-line="59" selection-start-column="30" selection-end-line="59" selection-end-column="30" />
         </state>
       </provider>
     </entry>
@@ -973,7 +961,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="351">
           <caret line="19" column="81" lean-forward="false" selection-start-line="19" selection-start-column="81" selection-end-line="19" selection-end-column="81" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -981,7 +968,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="2862">
           <caret line="138" column="17" lean-forward="false" selection-start-line="138" selection-start-column="17" selection-end-line="138" selection-end-column="17" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -989,7 +975,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="108">
           <caret line="6" column="17" lean-forward="false" selection-start-line="6" selection-start-column="17" selection-end-line="6" selection-end-column="17" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -997,19 +982,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="243">
           <caret line="17" column="72" lean-forward="false" selection-start-line="17" selection-start-column="72" selection-end-line="17" selection-end-column="72" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Model/Statements/BaeStatements/WhileStmt.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="405">
-          <caret line="22" column="24" lean-forward="false" selection-start-line="22" selection-start-column="24" selection-end-line="22" selection-end-column="24" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#791#792#0" expanded="true" />
-            <element signature="e#847#848#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1017,7 +989,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="270">
           <caret line="10" column="25" lean-forward="false" selection-start-line="10" selection-start-column="25" selection-end-line="10" selection-end-column="25" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1026,8 +997,8 @@
         <state relative-caret-position="621">
           <caret line="43" column="20" lean-forward="true" selection-start-line="43" selection-start-column="20" selection-end-line="43" selection-end-column="20" />
           <folding>
-            <element signature="e#271#272#0" expanded="true" />
-            <element signature="e#312#313#0" expanded="true" />
+            <element signature="e#271#272#0" expanded="false" />
+            <element signature="e#312#313#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1037,17 +1008,8 @@
         <state split_layout="SPLIT">
           <first_editor relative-caret-position="0">
             <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-            <folding />
           </first_editor>
           <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Interpreter.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="54">
-          <caret line="23" column="18" lean-forward="false" selection-start-line="23" selection-start-column="18" selection-end-line="23" selection-end-column="18" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1061,23 +1023,15 @@
     </entry>
     <entry file="jar://C:/Program Files/Java/jdk-9.0.1/lib/src.zip!/java.base/java/util/Map.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="279">
+        <state relative-caret-position="9801">
           <caret line="389" column="25" lean-forward="false" selection-start-line="389" selection-start-column="25" selection-end-line="389" selection-end-column="25" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Utils/PrimitiveADT/MyDictionary.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="108">
-          <caret line="6" column="70" lean-forward="false" selection-start-line="6" selection-start-column="70" selection-end-line="6" selection-end-column="70" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Utils/MyHeap.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="27">
+        <state relative-caret-position="54">
           <caret line="2" column="0" lean-forward="false" selection-start-line="2" selection-start-column="0" selection-end-line="2" selection-end-column="0" />
           <folding>
             <element signature="e#535#536#0" expanded="true" />
@@ -1100,32 +1054,65 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Model/PrgState.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="428">
-          <caret line="79" column="48" lean-forward="false" selection-start-line="79" selection-start-column="48" selection-end-line="79" selection-end-column="48" />
-          <folding>
-            <element signature="e#2292#2293#0" expanded="true" />
-            <element signature="e#2315#2316#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="270">
+          <caret line="19" column="0" lean-forward="false" selection-start-line="19" selection-start-column="0" selection-end-line="19" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Utils/MyFileReader.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="94">
+        <state relative-caret-position="189">
           <caret line="8" column="31" lean-forward="false" selection-start-line="8" selection-start-column="22" selection-end-line="8" selection-end-column="31" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Utils/PrimitiveADT/MyDictionary.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="108">
+          <caret line="6" column="70" lean-forward="false" selection-start-line="6" selection-start-column="70" selection-end-line="6" selection-end-column="70" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Controller/Controller.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="191">
-          <caret line="55" column="19" lean-forward="true" selection-start-line="55" selection-start-column="19" selection-end-line="55" selection-end-column="19" />
+        <state relative-caret-position="1161">
+          <caret line="59" column="0" lean-forward="false" selection-start-line="59" selection-start-column="0" selection-end-line="59" selection-end-column="0" />
           <folding>
             <element signature="e#1736#1737#0" expanded="true" />
             <element signature="e#1780#1781#0" expanded="true" />
             <element signature="e#1825#1826#0" expanded="true" />
             <element signature="e#1858#1859#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Model/Expressions/BooleanExp.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1458">
+          <caret line="58" column="22" lean-forward="false" selection-start-line="58" selection-start-column="22" selection-end-line="58" selection-end-column="22" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Interpreter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="378">
+          <caret line="35" column="32" lean-forward="false" selection-start-line="35" selection-start-column="24" selection-end-line="35" selection-end-column="32" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Model/Statements/BaeStatements/WhileStmt.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="675">
+          <caret line="25" column="29" lean-forward="true" selection-start-line="25" selection-start-column="29" selection-end-line="25" selection-end-column="29" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#808#809#0" expanded="true" />
+            <element signature="e#893#894#0" expanded="true" />
           </folding>
         </state>
       </provider>

@@ -10,27 +10,27 @@ import Utils.Interfaces.MyIStack;
 public class WhileStmt implements IStmt {
 
 	private Exp expression;
+	private IStmt statement;
 
-	public WhileStmt(Exp expression) {
+	public WhileStmt(Exp expression, IStmt statement) {
 		this.expression = expression;
+		this.statement = statement;
 	}
 
 	@Override
 	public PrgState execute(PrgState state) throws ExpressionException, FileException, HeapException {
 		Integer result = expression.eval(state.getSymTable(), state.getHeap());
 		MyIStack<IStmt> stack = state.getStack();
-		IStmt nextStmt = stack.pop();
 		if (result != 0)
 		{
-			stack.push(nextStmt);
 			stack.push(this);
-			stack.push(nextStmt);
+			stack.push(statement);
 		}
 		return state;
 	}
 
 	@Override
 	public String toString() {
-		return "WhileStmt(" + expression.toString() + ")";
+		return "WhileStmt(" + expression.toString() + ", "+ statement.toString() + ")";
 	}
 }

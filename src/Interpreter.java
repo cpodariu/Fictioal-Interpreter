@@ -117,9 +117,10 @@ public class Interpreter {
 		Repository r9 = new Repository(st9, log);
 		Controller c9 = new Controller(r9);
 		c9.getState().getStack().push(new PrintStmt(new VarExp("a")));
-		c9.getState().getStack().push(new CompStmt( new AssignStmt("a", new ArithExp('-', new VarExp("a"), new ConstExp(1))),
-													new PrintStmt(new VarExp("a"))));
-		c9.getState().getStack().push(new WhileStmt(new ArithExp(new VarExp("a"), new ConstExp(4), '-')));
+		c9.getState().getStack().push(new WhileStmt(new ArithExp(new VarExp("a"), new ConstExp(4), '-'),
+				new CompStmt( new AssignStmt("a", new ArithExp('-', new VarExp("a"), new ConstExp(1))),
+						new PrintStmt(new VarExp("a")))
+									));
 		c9.getState().getStack().push(new AssignStmt("a", new ConstExp(6)));
 
 
