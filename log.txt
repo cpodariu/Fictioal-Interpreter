@@ -1,464 +1,19 @@
+===Thread nr 1 ====
+
 Exe Stack:
-[( Read(var_f, var_c); Print(var_c) ), (If var_c then ( Read(var_f, var_c); Print(var_c) ) else Print(0)), Close(var_f) ]
+[v = 10, new(a, 22), fork(( HeapWrite(a, 30); ( v = 32; ( Print(v); Print(read(a)) ) ) )), Print(v), Print(read(a))]
 Sym Table:
-{var_f=0}
-Out:
-[]
-Exe Stack:
-[Read(var_f, var_c), Print(var_c), (If var_c then ( Read(var_f, var_c); Print(var_c) ) else Print(0)), Close(var_f) ]
-Sym Table:
-{var_f=0}
-Out:
-[]
-Exe Stack:
-[Print(var_c), (If var_c then ( Read(var_f, var_c); Print(var_c) ) else Print(0)), Close(var_f) ]
-Sym Table:
-{var_f=0, var_c=5}
-Out:
-[]
-Exe Stack:
-[(If var_c then ( Read(var_f, var_c); Print(var_c) ) else Print(0)), Close(var_f) ]
-Sym Table:
-{var_f=0, var_c=5}
-Out:
-[5]
-Exe Stack:
-[( Read(var_f, var_c); Print(var_c) ), Close(var_f) ]
-Sym Table:
-{var_f=0, var_c=5}
-Out:
-[5]
-Exe Stack:
-[Read(var_f, var_c), Print(var_c), Close(var_f) ]
-Sym Table:
-{var_f=0, var_c=5}
-Out:
-[5]
-Exe Stack:
-[Print(var_c), Close(var_f) ]
-Sym Table:
-{var_f=0, var_c=4}
-Out:
-[5]
-Exe Stack:
-[Close(var_f) ]
-Sym Table:
-{var_f=0, var_c=4}
-Out:
-[5, 4]
-Exe Stack:
-[]
-Sym Table:
-{var_c=4}
-Out:
-[5, 4]
-Exe Stack:
-[( Read(var_f, var_c); Print(var_c) ), (If var_c then ( Read(var_f, var_c); Print(var_c) ) else Print(0)), Close(var_f) ]
-Sym Table:
-{var_f=0}
-Out:
-[]
-Exe Stack:
-[Read(var_f, var_c), Print(var_c), (If var_c then ( Read(var_f, var_c); Print(var_c) ) else Print(0)), Close(var_f) ]
-Sym Table:
-{var_f=0}
-Out:
-[]
-Exe Stack:
-[Print(var_c), (If var_c then ( Read(var_f, var_c); Print(var_c) ) else Print(0)), Close(var_f) ]
-Sym Table:
-{var_f=0, var_c=5}
-Out:
-[]
-Exe Stack:
-[(If var_c then ( Read(var_f, var_c); Print(var_c) ) else Print(0)), Close(var_f) ]
-Sym Table:
-{var_f=0, var_c=5}
-Out:
-[5]
-Exe Stack:
-[( Read(var_f, var_c); Print(var_c) ), Close(var_f) ]
-Sym Table:
-{var_f=0, var_c=5}
-Out:
-[5]
-Exe Stack:
-[Read(var_f, var_c), Print(var_c), Close(var_f) ]
-Sym Table:
-{var_f=0, var_c=5}
-Out:
-[5]
-Exe Stack:
-[Print(var_c), Close(var_f) ]
-Sym Table:
-{var_f=0, var_c=4}
-Out:
-[5]
-Exe Stack:
-[Close(var_f) ]
-Sym Table:
-{var_f=0, var_c=4}
-Out:
-[5, 4]
-Exe Stack:
-[]
-Sym Table:
-{var_c=4}
-Out:
-[5, 4]
-Exe Stack:
-[( Read(var_f, var_c); Print(var_c) ), (If var_c then ( Read(var_f, var_c); Print(var_c) ) else Print(0)), Close(var_f) ]
-Sym Table:
-{var_f=0}
-Out:
-[]
-Files:
-{0=in.txt}
-Exe Stack:
-[Read(var_f, var_c), Print(var_c), (If var_c then ( Read(var_f, var_c); Print(var_c) ) else Print(0)), Close(var_f) ]
-Sym Table:
-{var_f=0}
-Out:
-[]
-Files:
-{0=in.txt}
-Exe Stack:
-[Print(var_c), (If var_c then ( Read(var_f, var_c); Print(var_c) ) else Print(0)), Close(var_f) ]
-Sym Table:
-{var_f=0, var_c=5}
-Out:
-[]
-Files:
-{0=in.txt}
-Exe Stack:
-[(If var_c then ( Read(var_f, var_c); Print(var_c) ) else Print(0)), Close(var_f) ]
-Sym Table:
-{var_f=0, var_c=5}
-Out:
-[5]
-Files:
-{0=in.txt}
-Exe Stack:
-[( Read(var_f, var_c); Print(var_c) ), Close(var_f) ]
-Sym Table:
-{var_f=0, var_c=5}
-Out:
-[5]
-Files:
-{0=in.txt}
-Exe Stack:
-[Read(var_f, var_c), Print(var_c), Close(var_f) ]
-Sym Table:
-{var_f=0, var_c=5}
-Out:
-[5]
-Files:
-{0=in.txt}
-Exe Stack:
-[Print(var_c), Close(var_f) ]
-Sym Table:
-{var_f=0, var_c=4}
-Out:
-[5]
-Files:
-{0=in.txt}
-Exe Stack:
-[Close(var_f) ]
-Sym Table:
-{var_f=0, var_c=4}
-Out:
-[5, 4]
-Files:
-{0=in.txt}
-Exe Stack:
-[]
-Sym Table:
-{var_c=4}
-Out:
-[5, 4]
-Files:
 {}
-Exe Stack:
-[( Read(var_f, var_c); Print(var_c) ), (If var_c then ( Read(var_f, var_c); Print(var_c) ) else Print(0)), Close(var_f) ]
-Sym Table:
-{var_f=0}
-Out:
-[]
-Files:
-{0=in.txt}
-Exe Stack:
-[Read(var_f, var_c), Print(var_c), (If var_c then ( Read(var_f, var_c); Print(var_c) ) else Print(0)), Close(var_f) ]
-Sym Table:
-{var_f=0}
-Out:
-[]
-Files:
-{0=in.txt}
-Exe Stack:
-[Print(var_c), (If var_c then ( Read(var_f, var_c); Print(var_c) ) else Print(0)), Close(var_f) ]
-Sym Table:
-{var_f=0, var_c=5}
-Out:
-[]
-Files:
-{0=in.txt}
-Exe Stack:
-[(If var_c then ( Read(var_f, var_c); Print(var_c) ) else Print(0)), Close(var_f) ]
-Sym Table:
-{var_f=0, var_c=5}
-Out:
-[5]
-Files:
-{0=in.txt}
-Exe Stack:
-[( Read(var_f, var_c); Print(var_c) ), Close(var_f) ]
-Sym Table:
-{var_f=0, var_c=5}
-Out:
-[5]
-Files:
-{0=in.txt}
-Exe Stack:
-[Read(var_f, var_c), Print(var_c), Close(var_f) ]
-Sym Table:
-{var_f=0, var_c=5}
-Out:
-[5]
-Files:
-{0=in.txt}
-Exe Stack:
-[Print(var_c), Close(var_f) ]
-Sym Table:
-{var_f=0, var_c=4}
-Out:
-[5]
-Files:
-{0=in.txt}
-Exe Stack:
-[Close(var_f) ]
-Sym Table:
-{var_f=0, var_c=4}
-Out:
-[5, 4]
-Files:
-{0=in.txt}
-Exe Stack:
-[]
-Sym Table:
-{var_c=4}
-Out:
-[5, 4]
-Files:
-{}
-
-Exe Stack:
-[( Read(var_f, var_c); Print(var_c) ), (If var_c then ( Read(var_f, var_c); Print(var_c) ) else Print(0)), Close(var_f) ]
-Sym Table:
-{var_f=0}
-Out:
-[]
-Files:
-{0=in.txt}
-
-Exe Stack:
-[Read(var_f, var_c), Print(var_c), (If var_c then ( Read(var_f, var_c); Print(var_c) ) else Print(0)), Close(var_f) ]
-Sym Table:
-{var_f=0}
-Out:
-[]
-Files:
-{0=in.txt}
-
-Exe Stack:
-[Print(var_c), (If var_c then ( Read(var_f, var_c); Print(var_c) ) else Print(0)), Close(var_f) ]
-Sym Table:
-{var_f=0, var_c=5}
-Out:
-[]
-Files:
-{0=in.txt}
-
-Exe Stack:
-[(If var_c then ( Read(var_f, var_c); Print(var_c) ) else Print(0)), Close(var_f) ]
-Sym Table:
-{var_f=0, var_c=5}
-Out:
-[5]
-Files:
-{0=in.txt}
-
-Exe Stack:
-[( Read(var_f, var_c); Print(var_c) ), Close(var_f) ]
-Sym Table:
-{var_f=0, var_c=5}
-Out:
-[5]
-Files:
-{0=in.txt}
-
-Exe Stack:
-[Read(var_f, var_c), Print(var_c), Close(var_f) ]
-Sym Table:
-{var_f=0, var_c=5}
-Out:
-[5]
-Files:
-{0=in.txt}
-
-Exe Stack:
-[Print(var_c), Close(var_f) ]
-Sym Table:
-{var_f=0, var_c=4}
-Out:
-[5]
-Files:
-{0=in.txt}
-
-Exe Stack:
-[Close(var_f) ]
-Sym Table:
-{var_f=0, var_c=4}
-Out:
-[5, 4]
-Files:
-{0=in.txt}
-
-Exe Stack:
-[]
-Sym Table:
-{var_c=4}
-Out:
-[5, 4]
-Files:
-{}
-
-Exe Stack:
-[( Read(var_f, var_c); Print(var_c) ), (If var_c then ( Read(var_f, var_c); Print(var_c) ) else Print(0)), Close(var_f) ]
-Sym Table:
-{var_f=0}
-Out:
-[]
-Files:
-{0=in.txt}
-
-Exe Stack:
-[Read(var_f, var_c), Print(var_c), (If var_c then ( Read(var_f, var_c); Print(var_c) ) else Print(0)), Close(var_f) ]
-Sym Table:
-{var_f=0}
-Out:
-[]
-Files:
-{0=in.txt}
-
-Exe Stack:
-[Print(var_c), (If var_c then ( Read(var_f, var_c); Print(var_c) ) else Print(0)), Close(var_f) ]
-Sym Table:
-{var_f=0, var_c=5}
-Out:
-[]
-Files:
-{0=in.txt}
-
-Exe Stack:
-[(If var_c then ( Read(var_f, var_c); Print(var_c) ) else Print(0)), Close(var_f) ]
-Sym Table:
-{var_f=0, var_c=5}
-Out:
-[5]
-Files:
-{0=in.txt}
-
-Exe Stack:
-[( Read(var_f, var_c); Print(var_c) ), Close(var_f) ]
-Sym Table:
-{var_f=0, var_c=5}
-Out:
-[5]
-Files:
-{0=in.txt}
-
-Exe Stack:
-[Read(var_f, var_c), Print(var_c), Close(var_f) ]
-Sym Table:
-{var_f=0, var_c=5}
-Out:
-[5]
-Files:
-{0=in.txt}
-
-Exe Stack:
-[Print(var_c), Close(var_f) ]
-Sym Table:
-{var_f=0, var_c=4}
-Out:
-[5]
-Files:
-{0=in.txt}
-
-Exe Stack:
-[Close(var_f) ]
-Sym Table:
-{var_f=0, var_c=4}
-Out:
-[5, 4]
-Files:
-{0=in.txt}
-
-Exe Stack:
-[]
-Sym Table:
-{var_c=4}
-Out:
-[5, 4]
-Files:
-{}
-
-Exe Stack:
-[new(v, 20), new(a, 22), Print(v)]
-Sym Table:
-{v=20}
 Out:
 []
 Files:
 {}
 Heap:
 {}
+===Thread nr 1 ====
 
 Exe Stack:
-[new(a, 22), Print(v)]
-Sym Table:
-{v=0}
-Out:
-[]
-Files:
-{}
-Heap:
-{0=20}
-
-Exe Stack:
-[Print(v)]
-Sym Table:
-{a=1, v=0}
-Out:
-[]
-Files:
-{}
-Heap:
-{0=20, 1=22}
-
-Exe Stack:
-[]
-Sym Table:
-{a=1, v=0}
-Out:
-[0]
-Files:
-{}
-Heap:
-{0=20, 1=22}
-
-Exe Stack:
-[new(v, 20), new(a, 22), Print(100 + v), Print(100 + a)]
+[new(a, 22), fork(( HeapWrite(a, 30); ( v = 32; ( Print(v); Print(read(a)) ) ) )), Print(v), Print(read(a))]
 Sym Table:
 {v=10}
 Out:
@@ -467,240 +22,166 @@ Files:
 {}
 Heap:
 {}
+===Thread nr 1 ====
 
 Exe Stack:
-[new(a, 22), Print(100 + v), Print(100 + a)]
+[fork(( HeapWrite(a, 30); ( v = 32; ( Print(v); Print(read(a)) ) ) )), Print(v), Print(read(a))]
 Sym Table:
-{v=0}
+{a=1, v=10}
 Out:
 []
 Files:
 {}
 Heap:
-{0=20}
+{1=22}
+===Thread nr 1 ====
 
 Exe Stack:
-[Print(100 + v), Print(100 + a)]
+[Print(v), Print(read(a))]
 Sym Table:
-{a=1, v=0}
+{a=1, v=10}
 Out:
 []
 Files:
 {}
 Heap:
-{0=20, 1=22}
+{1=22}
+===Thread nr 10 ====
 
 Exe Stack:
-[Print(100 + a)]
+[( HeapWrite(a, 30); ( v = 32; ( Print(v); Print(read(a)) ) ) )]
 Sym Table:
-{a=1, v=0}
-Out:
-[100]
-Files:
-{}
-Heap:
-{0=20, 1=22}
-
-Exe Stack:
-[]
-Sym Table:
-{a=1, v=0}
-Out:
-[100, 101]
-Files:
-{}
-Heap:
-{0=20, 1=22}
-
-Exe Stack:
-[new(v, 20), new(a, 22), Print(100 + read(v)), Print(100 + read(a))]
-Sym Table:
-{v=10}
+{a=1, v=10}
 Out:
 []
 Files:
 {}
 Heap:
-{}
-
-Exe Stack:
-[new(a, 22), Print(100 + read(v)), Print(100 + read(a))]
-Sym Table:
-{v=0}
-Out:
-[]
-Files:
-{}
-Heap:
-{0=20}
-
-Exe Stack:
-[Print(100 + read(v)), Print(100 + read(a))]
-Sym Table:
-{a=1, v=0}
-Out:
-[]
-Files:
-{}
-Heap:
-{0=20, 1=22}
-
-Exe Stack:
-[Print(100 + read(a))]
-Sym Table:
-{a=1, v=0}
-Out:
-[120]
-Files:
-{}
-Heap:
-{0=20, 1=22}
-
-Exe Stack:
-[]
-Sym Table:
-{a=1, v=0}
-Out:
-[120, 122]
-Files:
-{}
-Heap:
-{0=20, 1=22}
-
-Exe Stack:
-[new(v, 20), new(a, 22), Model.Statements.HeapStatements.HeapWriteStmt@61443d8f, Print(a), Print(read(a))]
-Sym Table:
-{v=10}
-Out:
-[]
-Files:
-{}
-Heap:
-{}
-
-Exe Stack:
-[new(a, 22), Model.Statements.HeapStatements.HeapWriteStmt@61443d8f, Print(a), Print(read(a))]
-Sym Table:
-{v=0}
-Out:
-[]
-Files:
-{}
-Heap:
-{0=20}
-
-Exe Stack:
-[Model.Statements.HeapStatements.HeapWriteStmt@61443d8f, Print(a), Print(read(a))]
-Sym Table:
-{a=1, v=0}
-Out:
-[]
-Files:
-{}
-Heap:
-{0=20, 1=22}
-
-Exe Stack:
-[Print(a), Print(read(a))]
-Sym Table:
-{a=1, v=0}
-Out:
-[]
-Files:
-{}
-Heap:
-{0=20, 1=20}
+{1=22}
+===Thread nr 1 ====
 
 Exe Stack:
 [Print(read(a))]
 Sym Table:
-{a=1, v=0}
+{a=1, v=10}
 Out:
-[1]
+[10]
 Files:
 {}
 Heap:
-{0=20, 1=20}
+{1=22}
+===Thread nr 10 ====
+
+Exe Stack:
+[HeapWrite(a, 30), ( v = 32; ( Print(v); Print(read(a)) ) )]
+Sym Table:
+{a=1, v=10}
+Out:
+[10]
+Files:
+{}
+Heap:
+{1=22}
+===Thread nr 1 ====
 
 Exe Stack:
 []
 Sym Table:
-{a=1, v=0}
+{a=1, v=10}
 Out:
-[1, 20]
+[10, 22]
 Files:
 {}
 Heap:
-{0=20, 1=20}
+{1=30}
+===Thread nr 10 ====
 
 Exe Stack:
-[new(v, 20), new(a, 22), Model.Statements.HeapStatements.HeapWriteStmt@66048bfd, Print(a), Print(read(a))]
+[( v = 32; ( Print(v); Print(read(a)) ) )]
 Sym Table:
-{v=10}
+{a=1, v=10}
 Out:
-[]
+[10, 22]
 Files:
 {}
 Heap:
-{}
+{1=30}
+===Thread nr 10 ====
 
 Exe Stack:
-[new(a, 22), Model.Statements.HeapStatements.HeapWriteStmt@66048bfd, Print(a), Print(read(a))]
+[v = 32, ( Print(v); Print(read(a)) )]
 Sym Table:
-{v=1}
+{a=1, v=10}
 Out:
-[]
+[10, 22]
 Files:
 {}
 Heap:
-{1=20}
+{1=30}
+===Thread nr 10 ====
 
 Exe Stack:
-[Model.Statements.HeapStatements.HeapWriteStmt@66048bfd, Print(a), Print(read(a))]
+[( Print(v); Print(read(a)) )]
 Sym Table:
-{a=2, v=1}
+{a=1, v=32}
 Out:
-[]
+[10, 22]
 Files:
 {}
 Heap:
-{1=20, 2=22}
+{1=30}
+===Thread nr 10 ====
 
 Exe Stack:
-[Print(a), Print(read(a))]
+[Print(v), Print(read(a))]
 Sym Table:
-{a=2, v=1}
+{a=1, v=32}
 Out:
-[]
+[10, 22]
 Files:
 {}
 Heap:
-{1=20, 2=20}
+{1=30}
+===Thread nr 10 ====
 
 Exe Stack:
 [Print(read(a))]
 Sym Table:
-{a=2, v=1}
+{a=1, v=32}
 Out:
-[2]
+[10, 22, 32]
 Files:
 {}
 Heap:
-{1=20, 2=20}
+{1=30}
+===Thread nr 10 ====
 
 Exe Stack:
 []
 Sym Table:
-{a=2, v=1}
+{a=1, v=32}
 Out:
-[2, 20]
+[10, 22, 32, 30]
 Files:
 {}
 Heap:
-{1=20, 2=20}
+{1=30}
+===Thread nr 1 ====
 
 Exe Stack:
-[new(v, 20), new(a, 22), Model.Statements.HeapStatements.HeapWriteStmt@591f989e, Print(a), Print(read(a)), a = 1]
+[v = 10, new(a, 22), fork(( HeapWrite(a, 30); ( v = 32; ( Print(v); Print(read(a)) ) ) )), Print(v), Print(read(a))]
+Sym Table:
+{}
+Out:
+[]
+Files:
+{}
+Heap:
+{}
+===Thread nr 1 ====
+
+Exe Stack:
+[new(a, 22), fork(( HeapWrite(a, 30); ( v = 32; ( Print(v); Print(read(a)) ) ) )), Print(v), Print(read(a))]
 Sym Table:
 {v=10}
 Out:
@@ -709,630 +190,147 @@ Files:
 {}
 Heap:
 {}
+===Thread nr 1 ====
 
 Exe Stack:
-[new(a, 22), Model.Statements.HeapStatements.HeapWriteStmt@591f989e, Print(a), Print(read(a)), a = 1]
+[fork(( HeapWrite(a, 30); ( v = 32; ( Print(v); Print(read(a)) ) ) )), Print(v), Print(read(a))]
 Sym Table:
-{v=1}
+{a=1, v=10}
 Out:
 []
 Files:
 {}
 Heap:
-{1=20}
+{1=22}
+===Thread nr 1 ====
 
 Exe Stack:
-[Model.Statements.HeapStatements.HeapWriteStmt@591f989e, Print(a), Print(read(a)), a = 1]
+[Print(v), Print(read(a))]
 Sym Table:
-{a=2, v=1}
+{a=1, v=10}
 Out:
 []
 Files:
 {}
 Heap:
-{1=20, 2=22}
+{1=22}
+===Thread nr 10 ====
 
 Exe Stack:
-[Print(a), Print(read(a)), a = 1]
+[( HeapWrite(a, 30); ( v = 32; ( Print(v); Print(read(a)) ) ) )]
 Sym Table:
-{a=2, v=1}
+{a=1, v=10}
 Out:
 []
 Files:
 {}
 Heap:
-{1=20, 2=20}
+{1=22}
+===Thread nr 1 ====
 
 Exe Stack:
-[Print(read(a)), a = 1]
+[Print(read(a))]
 Sym Table:
-{a=2, v=1}
+{a=1, v=10}
 Out:
-[2]
+[10]
 Files:
 {}
 Heap:
-{1=20, 2=20}
+{1=22}
+===Thread nr 10 ====
 
 Exe Stack:
-[a = 1]
+[HeapWrite(a, 30), ( v = 32; ( Print(v); Print(read(a)) ) )]
 Sym Table:
-{a=2, v=1}
+{a=1, v=10}
 Out:
-[2, 20]
+[10]
 Files:
 {}
 Heap:
-{1=20, 2=20}
-
-Exe Stack:
-[]
-Sym Table:
-{a=1, v=1}
-Out:
-[2, 20]
-Files:
-{}
-Heap:
-{1=20}
-
-Exe Stack:
-[Model.Statements.BaeStatements.WhileStmt@233c0b17, ( a = a - 1; Print(a) ), Print(a)]
-Sym Table:
-{a=6}
-Out:
-[]
-Files:
-{}
-Heap:
-{}
-
-Exe Stack:
-[( a = a - 1; Print(a) ), Model.Statements.BaeStatements.WhileStmt@233c0b17, ( a = a - 1; Print(a) ), Print(a)]
-Sym Table:
-{a=6}
-Out:
-[]
-Files:
-{}
-Heap:
-{}
-
-Exe Stack:
-[a = a - 1, Print(a), Model.Statements.BaeStatements.WhileStmt@233c0b17, ( a = a - 1; Print(a) ), Print(a)]
-Sym Table:
-{a=6}
-Out:
-[]
-Files:
-{}
-Heap:
-{}
-
-Exe Stack:
-[Print(a), Model.Statements.BaeStatements.WhileStmt@233c0b17, ( a = a - 1; Print(a) ), Print(a)]
-Sym Table:
-{a=5}
-Out:
-[]
-Files:
-{}
-Heap:
-{}
-
-Exe Stack:
-[Model.Statements.BaeStatements.WhileStmt@233c0b17, ( a = a - 1; Print(a) ), Print(a)]
-Sym Table:
-{a=5}
-Out:
-[5]
-Files:
-{}
-Heap:
-{}
-
-Exe Stack:
-[( a = a - 1; Print(a) ), Model.Statements.BaeStatements.WhileStmt@233c0b17, ( a = a - 1; Print(a) ), Print(a)]
-Sym Table:
-{a=5}
-Out:
-[5]
-Files:
-{}
-Heap:
-{}
-
-Exe Stack:
-[a = a - 1, Print(a), Model.Statements.BaeStatements.WhileStmt@233c0b17, ( a = a - 1; Print(a) ), Print(a)]
-Sym Table:
-{a=5}
-Out:
-[5]
-Files:
-{}
-Heap:
-{}
-
-Exe Stack:
-[Print(a), Model.Statements.BaeStatements.WhileStmt@233c0b17, ( a = a - 1; Print(a) ), Print(a)]
-Sym Table:
-{a=4}
-Out:
-[5]
-Files:
-{}
-Heap:
-{}
-
-Exe Stack:
-[Model.Statements.BaeStatements.WhileStmt@233c0b17, ( a = a - 1; Print(a) ), Print(a)]
-Sym Table:
-{a=4}
-Out:
-[5, 4]
-Files:
-{}
-Heap:
-{}
-
-Exe Stack:
-[Print(a)]
-Sym Table:
-{a=4}
-Out:
-[5, 4]
-Files:
-{}
-Heap:
-{}
+{1=22}
+===Thread nr 1 ====
 
 Exe Stack:
 []
 Sym Table:
-{a=4}
+{a=1, v=10}
 Out:
-[5, 4, 4]
+[10, 22]
 Files:
 {}
 Heap:
-{}
+{1=30}
+===Thread nr 10 ====
 
 Exe Stack:
-[new(v, 20), new(a, 22), HeapWrite(a, 20), Print(a), Print(read(a)), a = 1]
+[( v = 32; ( Print(v); Print(read(a)) ) )]
 Sym Table:
-{v=10}
+{a=1, v=10}
 Out:
-[]
+[10, 22]
 Files:
 {}
 Heap:
-{}
+{1=30}
+===Thread nr 10 ====
 
 Exe Stack:
-[new(a, 22), HeapWrite(a, 20), Print(a), Print(read(a)), a = 1]
+[v = 32, ( Print(v); Print(read(a)) )]
 Sym Table:
-{v=1}
+{a=1, v=10}
 Out:
-[]
+[10, 22]
 Files:
 {}
 Heap:
-{1=20}
+{1=30}
+===Thread nr 10 ====
 
 Exe Stack:
-[HeapWrite(a, 20), Print(a), Print(read(a)), a = 1]
+[( Print(v); Print(read(a)) )]
 Sym Table:
-{a=2, v=1}
+{a=1, v=32}
 Out:
-[]
+[10, 22]
 Files:
 {}
 Heap:
-{1=20, 2=22}
+{1=30}
+===Thread nr 10 ====
 
 Exe Stack:
-[Print(a), Print(read(a)), a = 1]
+[Print(v), Print(read(a))]
 Sym Table:
-{a=2, v=1}
+{a=1, v=32}
 Out:
-[]
+[10, 22]
 Files:
 {}
 Heap:
-{1=20, 2=20}
+{1=30}
+===Thread nr 10 ====
 
 Exe Stack:
-[Print(read(a)), a = 1]
+[Print(read(a))]
 Sym Table:
-{a=2, v=1}
+{a=1, v=32}
 Out:
-[2]
+[10, 22, 32]
 Files:
 {}
 Heap:
-{1=20, 2=20}
-
-Exe Stack:
-[a = 1]
-Sym Table:
-{a=2, v=1}
-Out:
-[2, 20]
-Files:
-{}
-Heap:
-{1=20, 2=20}
+{1=30}
+===Thread nr 10 ====
 
 Exe Stack:
 []
 Sym Table:
-{a=1, v=1}
+{a=1, v=32}
 Out:
-[2, 20]
+[10, 22, 32, 30]
 Files:
 {}
 Heap:
-{1=20}
-
-Exe Stack:
-[WhileStmt(a - 4), ( a = a - 1; Print(a) ), Print(a)]
-Sym Table:
-{a=6}
-Out:
-[]
-Files:
-{}
-Heap:
-{}
-
-Exe Stack:
-[( a = a - 1; Print(a) ), WhileStmt(a - 4), ( a = a - 1; Print(a) ), Print(a)]
-Sym Table:
-{a=6}
-Out:
-[]
-Files:
-{}
-Heap:
-{}
-
-Exe Stack:
-[a = a - 1, Print(a), WhileStmt(a - 4), ( a = a - 1; Print(a) ), Print(a)]
-Sym Table:
-{a=6}
-Out:
-[]
-Files:
-{}
-Heap:
-{}
-
-Exe Stack:
-[Print(a), WhileStmt(a - 4), ( a = a - 1; Print(a) ), Print(a)]
-Sym Table:
-{a=5}
-Out:
-[]
-Files:
-{}
-Heap:
-{}
-
-Exe Stack:
-[WhileStmt(a - 4), ( a = a - 1; Print(a) ), Print(a)]
-Sym Table:
-{a=5}
-Out:
-[5]
-Files:
-{}
-Heap:
-{}
-
-Exe Stack:
-[( a = a - 1; Print(a) ), WhileStmt(a - 4), ( a = a - 1; Print(a) ), Print(a)]
-Sym Table:
-{a=5}
-Out:
-[5]
-Files:
-{}
-Heap:
-{}
-
-Exe Stack:
-[a = a - 1, Print(a), WhileStmt(a - 4), ( a = a - 1; Print(a) ), Print(a)]
-Sym Table:
-{a=5}
-Out:
-[5]
-Files:
-{}
-Heap:
-{}
-
-Exe Stack:
-[Print(a), WhileStmt(a - 4), ( a = a - 1; Print(a) ), Print(a)]
-Sym Table:
-{a=4}
-Out:
-[5]
-Files:
-{}
-Heap:
-{}
-
-Exe Stack:
-[WhileStmt(a - 4), ( a = a - 1; Print(a) ), Print(a)]
-Sym Table:
-{a=4}
-Out:
-[5, 4]
-Files:
-{}
-Heap:
-{}
-
-Exe Stack:
-[Print(a)]
-Sym Table:
-{a=4}
-Out:
-[5, 4]
-Files:
-{}
-Heap:
-{}
-
-Exe Stack:
-[]
-Sym Table:
-{a=4}
-Out:
-[5, 4, 4]
-Files:
-{}
-Heap:
-{}
-
-Exe Stack:
-[WhileStmt(a - 4), ( a = a - 1; Print(a) ), Print(a)]
-Sym Table:
-{a=6}
-Out:
-[]
-Files:
-{}
-Heap:
-{}
-
-Exe Stack:
-[( a = a - 1; Print(a) ), WhileStmt(a - 4), ( a = a - 1; Print(a) ), Print(a)]
-Sym Table:
-{a=6}
-Out:
-[]
-Files:
-{}
-Heap:
-{}
-
-Exe Stack:
-[a = a - 1, Print(a), WhileStmt(a - 4), ( a = a - 1; Print(a) ), Print(a)]
-Sym Table:
-{a=6}
-Out:
-[]
-Files:
-{}
-Heap:
-{}
-
-Exe Stack:
-[Print(a), WhileStmt(a - 4), ( a = a - 1; Print(a) ), Print(a)]
-Sym Table:
-{a=5}
-Out:
-[]
-Files:
-{}
-Heap:
-{}
-
-Exe Stack:
-[WhileStmt(a - 4), ( a = a - 1; Print(a) ), Print(a)]
-Sym Table:
-{a=5}
-Out:
-[5]
-Files:
-{}
-Heap:
-{}
-
-Exe Stack:
-[( a = a - 1; Print(a) ), WhileStmt(a - 4), ( a = a - 1; Print(a) ), Print(a)]
-Sym Table:
-{a=5}
-Out:
-[5]
-Files:
-{}
-Heap:
-{}
-
-Exe Stack:
-[a = a - 1, Print(a), WhileStmt(a - 4), ( a = a - 1; Print(a) ), Print(a)]
-Sym Table:
-{a=5}
-Out:
-[5]
-Files:
-{}
-Heap:
-{}
-
-Exe Stack:
-[Print(a), WhileStmt(a - 4), ( a = a - 1; Print(a) ), Print(a)]
-Sym Table:
-{a=4}
-Out:
-[5]
-Files:
-{}
-Heap:
-{}
-
-Exe Stack:
-[WhileStmt(a - 4), ( a = a - 1; Print(a) ), Print(a)]
-Sym Table:
-{a=4}
-Out:
-[5, 4]
-Files:
-{}
-Heap:
-{}
-
-Exe Stack:
-[Print(a)]
-Sym Table:
-{a=4}
-Out:
-[5, 4]
-Files:
-{}
-Heap:
-{}
-
-Exe Stack:
-[]
-Sym Table:
-{a=4}
-Out:
-[5, 4, 4]
-Files:
-{}
-Heap:
-{}
-
-Exe Stack:
-[WhileStmt(a - 4), ( a = a - 1; Print(a) ), Print(a)]
-Sym Table:
-{a=6}
-Out:
-[]
-Files:
-{}
-Heap:
-{}
-
-Exe Stack:
-[( a = a - 1; Print(a) ), WhileStmt(a - 4), ( a = a - 1; Print(a) ), Print(a)]
-Sym Table:
-{a=6}
-Out:
-[]
-Files:
-{}
-Heap:
-{}
-
-Exe Stack:
-[a = a - 1, Print(a), WhileStmt(a - 4), ( a = a - 1; Print(a) ), Print(a)]
-Sym Table:
-{a=6}
-Out:
-[]
-Files:
-{}
-Heap:
-{}
-
-Exe Stack:
-[Print(a), WhileStmt(a - 4), ( a = a - 1; Print(a) ), Print(a)]
-Sym Table:
-{a=5}
-Out:
-[]
-Files:
-{}
-Heap:
-{}
-
-Exe Stack:
-[WhileStmt(a - 4), ( a = a - 1; Print(a) ), Print(a)]
-Sym Table:
-{a=5}
-Out:
-[5]
-Files:
-{}
-Heap:
-{}
-
-Exe Stack:
-[( a = a - 1; Print(a) ), WhileStmt(a - 4), ( a = a - 1; Print(a) ), Print(a)]
-Sym Table:
-{a=5}
-Out:
-[5]
-Files:
-{}
-Heap:
-{}
-
-Exe Stack:
-[a = a - 1, Print(a), WhileStmt(a - 4), ( a = a - 1; Print(a) ), Print(a)]
-Sym Table:
-{a=5}
-Out:
-[5]
-Files:
-{}
-Heap:
-{}
-
-Exe Stack:
-[Print(a), WhileStmt(a - 4), ( a = a - 1; Print(a) ), Print(a)]
-Sym Table:
-{a=4}
-Out:
-[5]
-Files:
-{}
-Heap:
-{}
-
-Exe Stack:
-[WhileStmt(a - 4), ( a = a - 1; Print(a) ), Print(a)]
-Sym Table:
-{a=4}
-Out:
-[5, 4]
-Files:
-{}
-Heap:
-{}
-
-Exe Stack:
-[Print(a)]
-Sym Table:
-{a=4}
-Out:
-[5, 4]
-Files:
-{}
-Heap:
-{}
-
-Exe Stack:
-[]
-Sym Table:
-{a=4}
-Out:
-[5, 4, 4]
-Files:
-{}
-Heap:
-{}
+{1=30}

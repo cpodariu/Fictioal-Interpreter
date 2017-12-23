@@ -6,7 +6,7 @@ import Utils.Interfaces.MyIList;
 import java.util.List;
 
 public interface RepositoryInterface {
-    MyIList<PrgState> getPrgList();
-    void setPrgList(MyIList<PrgState> list);
+    List<PrgState> getPrgList();
+    void setPrgList(List<PrgState> list);
     void logPrgStateExec(PrgState state);
 }

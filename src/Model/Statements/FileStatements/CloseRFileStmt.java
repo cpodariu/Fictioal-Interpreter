@@ -29,7 +29,7 @@ public class CloseRFileStmt implements IStmt {
 		String label = varId.toString();
 		symTable.remove(label);
 		
-		return state;
+		return null;
 	}
 	public String toString()
 	{

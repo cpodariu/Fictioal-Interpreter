@@ -20,7 +20,7 @@ public class PrgState {
     private MyIList<String> out;
     private MyIDictionary<Integer, MyFileReader> fileTable;
     private MyIHeap heap;
-	private int id;
+	private int id = 1;
 
 	public int getId() {
 		return id;
@@ -30,7 +30,6 @@ public class PrgState {
 		this.id = id;
 	}
 
-
     public PrgState()
     {
         exeStack = new MyStack<IStmt>();
@@ -38,6 +37,7 @@ public class PrgState {
         out = new MyList<String>();
         fileTable = new MyDictionary<Integer, MyFileReader>();
         heap = new MyHeap();
+        id = 1;
     }
 
     public PrgState(MyIStack<IStmt> exeStack,MyIDictionary<String,Integer> symTable, MyIList<String> out )
@@ -56,14 +56,24 @@ public class PrgState {
     }
 
 
-    public PrgState(MyIStack<IStmt> exeStack,MyIDictionary<String,Integer> symTable, MyIList<String> out, MyIDictionary<Integer, MyFileReader>fileTable, MyIHeap heap)
-    {
+	public PrgState(MyIStack<IStmt> exeStack,MyIDictionary<String,Integer> symTable, MyIList<String> out, MyIDictionary<Integer, MyFileReader>fileTable, MyIHeap heap)
+	{
         this.exeStack = exeStack;
         this.symTable = symTable;
-        this.out = out;
-        this.fileTable = fileTable;
-        this.heap = heap;
+	    this.out = out;
+	    this.fileTable = fileTable;
+	    this.heap = heap;
     }
+	
+	public PrgState(MyIStack<IStmt> exeStack, MyIDictionary<String,Integer> symTable, MyIList<String> out, MyIDictionary<Integer, MyFileReader>fileTable, MyIHeap heap, int id)
+	{
+		this.exeStack = exeStack;
+		this.symTable = symTable;
+		this.out = out;
+		this.fileTable = fileTable;
+		this.heap = heap;
+		this.id = id;
+	}
 
     public MyIStack<IStmt> getStack()
     {
@@ -82,7 +92,8 @@ public class PrgState {
 
     public String toString()
     {
-        String res = "\nExe Stack:\n" + exeStack.toString() +
+        String res = "===Thread nr " + this.id + " ====\n" +
+		        "\nExe Stack:\n" + exeStack.toString() +
                 "\nSym Table:\n" + symTable.toString() +
                 "\nOut:\n" + out.toString() +
                 "\nFiles:\n" + fileTable.toString() +
@@ -106,10 +117,11 @@ public class PrgState {
     	return !this.exeStack.isEmpty();
     }
 
-//    TODO: StatementExecutionException
-	PrgState oneStep() throws HeapException, FileException, ExpressionException, Exception {
-		if(exeStack.isEmpty()) throw new Exception("asd");
-		IStmt crtStmt = exeStack.pop();
-		return crtStmt.execute(this);
+
+	public PrgState oneStep(PrgState state) throws HeapException, FileException, ExpressionException, Exception {
+		MyIStack<IStmt> stk = state.getStack();
+		if(stk.isEmpty()) throw new Exception();
+		IStmt crtStmt = stk.pop();
+		return crtStmt.execute(state);
 	}
 }

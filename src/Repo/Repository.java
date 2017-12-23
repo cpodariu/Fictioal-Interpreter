@@ -11,11 +11,12 @@ import java.io.BufferedWriter;
 import java.io.FileWriter;
 import java.io.IOException;
 import java.io.PrintWriter;
+import java.util.ArrayList;
 import java.util.List;
 
 public class Repository implements RepositoryInterface {
 //	PrgState state;
-	MyIList<PrgState> states;
+	List<PrgState> states = new ArrayList<PrgState>();
 	String logFilePath;
 	PrintWriter logFileWriter;
 	
@@ -42,14 +43,16 @@ public class Repository implements RepositoryInterface {
 	}
 
 	@Override
-	public MyIList<PrgState> getPrgList() {
+	public List<PrgState> getPrgList() {
 		return this.states;
 	}
 
 	@Override
-	public void setPrgList(MyIList<PrgState> list) {
+	public void setPrgList(List<PrgState> list) {
 		this.states = list;
 	}
+	
+	
 
 	@Override
 	public void logPrgStateExec(PrgState state) {

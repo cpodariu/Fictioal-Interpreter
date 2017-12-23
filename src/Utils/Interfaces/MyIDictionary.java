@@ -12,4 +12,5 @@ public interface MyIDictionary <K,V>{
     boolean containsValue(Object value);
     Set<K> keySet();
     Collection<V> values();
+    Object clone();
 }

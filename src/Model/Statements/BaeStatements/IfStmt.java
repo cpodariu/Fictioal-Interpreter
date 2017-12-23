@@ -30,7 +30,7 @@ public class IfStmt implements IStmt {
             state.getStack().push(thenS);
         else
             state.getStack().push(elseS);
-        return state;
+        return null;
     }
 
 }

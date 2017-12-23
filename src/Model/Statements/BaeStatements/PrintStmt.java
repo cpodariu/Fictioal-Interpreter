@@ -19,7 +19,7 @@ public class PrintStmt implements IStmt {
         MyIList<String> out = state.getOut();
 
         out.add(Integer.toString(exp.eval(state.getSymTable(), state.getHeap())));
-        return state;
+        return null;
     }
 
     public String toString()

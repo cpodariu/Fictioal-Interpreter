@@ -3,19 +3,28 @@ package Controller;
 import Exceptions.ExpressionException;
 import Exceptions.FileException;
 import Exceptions.HeapException;
+import Exceptions.StatementException;
 import Model.Statements.BaeStatements.IStmt;
 import Model.PrgState;
 import Repo.Repository;
+import Utils.Interfaces.MyIList;
 import Utils.MyFileReader;
 
 import java.util.Collection;
+import java.util.List;
 import java.util.Map;
+import java.util.Objects;
+import java.util.concurrent.Callable;
+import java.util.concurrent.ExecutionException;
+import java.util.concurrent.ExecutorService;
+import java.util.concurrent.Executors;
 import java.util.stream.Collectors;
 
 public class Controller {
 
-    Repository repository;
-
+    private Repository repository;
+    private ExecutorService executor;
+    
     public Controller()
     {
         this.repository = new Repository();
@@ -44,29 +53,64 @@ public class Controller {
     Map<Integer,Integer> conservativeGarbageCollector(Collection<Integer> symTableValues, Map<Integer,Integer> heap){
         return heap.entrySet().stream().filter(e->symTableValues.contains(e.getKey())).collect(Collectors.toMap(Map.Entry::getKey, Map.Entry::getValue));
     }
-
-
-    public void allSteps() throws ExpressionException, FileException, HeapException {
-        PrgState state = repository.getState();
-        System.out.print(state.toString());
-        try {
-            do {
-                oneStep();
-            } while (!state.getStack().isEmpty());
-        } finally {
-            state.getFileTable().values().forEach(MyFileReader::close);
+    
+    
+    public void allSteps() {
+        executor = Executors.newFixedThreadPool(2);
+        //remove the completed programs
+        List<PrgState> prgList=removeCompletedPrg(repository.getPrgList());
+        prgList.forEach(prg ->repository.logPrgStateExec(prg));
+        while(prgList.size() > 0){
+            try {
+                oneStepForAllPrg(prgList);
+            } catch (InterruptedException e) {
+                e.printStackTrace();
+            }
+            //remove the completed programs
+            prgList=removeCompletedPrg(repository.getPrgList());
         }
+        executor.shutdownNow();
+        //HERE the repository still contains at least one Completed Prg
+        // and its List<PrgState> is not empty. Note that oneStepForAllPrg calls the method
+        //setPrgList of repository in order to change the repository
+        
+        // update the repository state
+        repository.setPrgList(prgList);
+        
+    }
+    
+    
+    private void oneStepForAllPrg(List<PrgState> prgList) throws InterruptedException {
+//        prgList.forEach(prg ->repository.logPrgStateExec(prg));
+        
+        List<Callable<PrgState>> callList = prgList.stream()
+                .map((PrgState p) -> (Callable<PrgState>)(() -> {return p.oneStep(p);}))
+                .collect(Collectors.toList());
+        
+        List<PrgState> newPrgList = executor.invokeAll(callList).stream()
+                .map(future -> {   try { return future.get();
+                        } catch (InterruptedException e) {
+                            System.out.print("InterruptedExcception" + e.toString());
+                        } catch (ExecutionException e) {
+                            System.out.print("ExecutionExccption " + e.toString());
+                        }
+                            return null;    }
+                    ).filter(Objects::nonNull).collect(Collectors.toList());
+        
+                    prgList.addAll(newPrgList);
+        
+                    prgList.forEach(prg ->repository.logPrgStateExec(prg));
+                    //Save the current programs in the repository
+                    repository.setPrgList(prgList);
     }
 
-    public PrgState getState()
-    {
-        return repository.getState();
-    }
 
     public Repository getRepository()
     {
         return repository;
     }
-
+    
+    private List<PrgState> removeCompletedPrg(List<PrgState> inPrgList){
+        return inPrgList.stream().filter(PrgState::isNotCompleted).collect(Collectors.toList());
+    }
 }
-r
