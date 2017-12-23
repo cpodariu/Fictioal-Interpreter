@@ -1,8 +1,12 @@
 package Repo;
 
 import Model.PrgState;
+import Utils.Interfaces.MyIList;
+
+import java.util.List;
 
 public interface RepositoryInterface {
-    PrgState getState();
-    void logPrgStateExec();
+    List<PrgState> getPrgList();
+    void setPrgList(List<PrgState> list);
+    void logPrgStateExec(PrgState state);
 }

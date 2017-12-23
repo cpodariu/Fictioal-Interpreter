@@ -10,7 +10,7 @@ public class RunExampleCommand extends Command{
 	{
 		super(key, desc);
 		this.ctrl = ctrl;
-		description = this.ctrl.getState().getStack().toString();
+		description = this.ctrl.getRepository().getPrgList().get(0).getStack().toString();
 	}
 	
 	public void execute()

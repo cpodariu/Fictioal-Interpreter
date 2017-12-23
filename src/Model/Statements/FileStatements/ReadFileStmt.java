@@ -30,7 +30,7 @@ public class ReadFileStmt implements IStmt {
 		
 		state.getSymTable().put(label, buff);
 		
-		return state;
+		return null;
 	}
 	
 	

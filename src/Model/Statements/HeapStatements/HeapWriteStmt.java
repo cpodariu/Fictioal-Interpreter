@@ -33,7 +33,7 @@ public class HeapWriteStmt implements IStmt {
             throw new HeapException("The given address has no corresponding allocated memory");
 
         heap.setValue(address, expression.eval(symTable, heap));
-        return state;
+        return null;
     }
 
     @Override

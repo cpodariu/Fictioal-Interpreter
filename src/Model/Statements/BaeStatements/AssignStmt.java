@@ -21,7 +21,7 @@ public class AssignStmt implements IStmt {
         int res = value.eval(symTable, state.getHeap());
         symTable.put(label, res);
 
-        return state;
+        return null;
     }
 
     public AssignStmt(String name, Exp exp)

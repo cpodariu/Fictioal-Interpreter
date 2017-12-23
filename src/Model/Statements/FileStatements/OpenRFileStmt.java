@@ -63,7 +63,7 @@ public class OpenRFileStmt implements IStmt {
 		}
 		symTable.put(variableId, fileId);
 		
-		return prgState;
+		return null;
 	}
 	
 	public String toString()
